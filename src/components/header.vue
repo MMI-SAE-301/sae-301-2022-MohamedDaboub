@@ -6,6 +6,7 @@
                 <RouterLink to="/">Logo du Site</RouterLink>
                 <Bars3Icon class=" text-white "  >
                 </Bars3Icon>
+                <span class="sr-only ">Menu</span>
             </div>
             <!-- menu Mobile -->
             <ul class="lg:hidden text-xl  mx-6 py-4 text-center"  >
