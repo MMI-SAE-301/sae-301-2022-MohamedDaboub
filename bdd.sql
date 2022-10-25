@@ -39,6 +39,10 @@ create view allMontre as
 select *
 from "Montre";
 
+CREATE VIEW Montrepasvendu as
+SELECT * FROM "Montre"
+WHERE "Commande" = false;
+
 
 
 
