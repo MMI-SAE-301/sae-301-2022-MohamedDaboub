@@ -1,6 +1,6 @@
 <template>
     <header class="bg-Color-grisfoncé sticky top-0 z-10">
-        <a href="#content">Passez au contenu</a>
+        <a href="#content" class="sr-only focus:not-sr-only text-lg text-white">Passez au contenu</a>
     
         <nav>
             <div>
