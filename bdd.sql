@@ -54,3 +54,7 @@ WHERE "Commande" = true;
 
 CREATE POLICY "Autoriser les utilisateurs à composé leurs Montre"
     ON "Montre" WITH CHECK (true);
+
+CREATE POLICY "Autoriser les utilisateurs à modifier seulement leurs Montre"
+on "Montre" for update to authenticated using ((auth.uid() = id_user) AND ("Commande" = false))
+with check (auth.uid() in (Select id_user from "Montre"));
