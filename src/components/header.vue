@@ -13,7 +13,7 @@
                 <li><RouterLink to="/Connexion"></RouterLink>Connexion</li>
             </ul>
             <!-- menu pc  -->
-            <ul>
+            <ul class="lg:flex  gap-6 lg:items-center text-text  text-xl  mx-6 py-4 hidden">
                 <li><RouterLink to="/"></RouterLink>Accueil</li>
                 <li><RouterLink to="/Personnalisation"></RouterLink>Personnalisation</li>
                 <li><RouterLink to="/Inspirations"></RouterLink>Inspirations</li>
