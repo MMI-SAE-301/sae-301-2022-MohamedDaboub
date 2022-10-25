@@ -28,11 +28,12 @@ CREATE TABLE Profil
     foreign key (Email) references auth.users(Email)
 );
 
-
-
 --
 -- code pour la création des vues
 --
+create view allMatériel as
+select *
+from "Matériel";
 
 
 
