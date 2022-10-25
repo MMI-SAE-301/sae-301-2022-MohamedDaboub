@@ -22,18 +22,18 @@
                 leave-to-class="transform scale-95 opacity-0"
             >
             <ul :class="{hidden:menuOuvert}" class="lg:hidden text-xl  mx-6 py-4 text-center"  >
-                <li><RouterLink to="/"></RouterLink>Accueil</li>
-                <li><RouterLink to="/Personnalisation"></RouterLink>Personnalisation</li>
-                <li><RouterLink to="/Inspirations"></RouterLink>Inspirations</li>
-                <li><RouterLink to="/Connexion"></RouterLink>Connexion</li>
+                <li><RouterLink to="/">Accueil</RouterLink></li>
+                <li><RouterLink to="/Personnalisation">Personnalisation</RouterLink></li>
+                <li><RouterLink to="/Inspirations">Inspirations</RouterLink></li>
+                <li><RouterLink to="/Connexion">Connexion</RouterLink></li>
             </ul>
             </transition>
             <!-- menu pc  -->
             <ul class="lg:flex  gap-6 lg:items-center text-text text-xl  hidden">
-                <li ><RouterLink to="/"></RouterLink>Accueil</li>
-                <li ><RouterLink to="/Personnalisation"></RouterLink>Personnalisation</li>
-                <li ><RouterLink to="/Inspirations"></RouterLink>Inspirations</li>
-                <li class="bg-Color-Bluefoncé  py-10 px-5 "><RouterLink to="/Connexion"></RouterLink>Connexion</li>
+                <li ><RouterLink to="/">Accueil</RouterLink></li>
+                <li ><RouterLink to="/Personnalisation">Personnalisation</RouterLink></li>
+                <li ><RouterLink to="/Inspirations">Inspirations</RouterLink></li>
+                <li class="bg-Color-Bluefoncé  py-10 px-5 "><RouterLink to="/Connexion">Connexion</RouterLink></li>
             </ul>
         </nav>
     </header>
