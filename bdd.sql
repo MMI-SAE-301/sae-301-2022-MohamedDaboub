@@ -43,7 +43,9 @@ CREATE VIEW Montrepasvendu as
 SELECT * FROM "Montre"
 WHERE "Commande" = false;
 
-
+CREATE VIEW MontreVendu as
+SELECT * FROM "Montre"
+WHERE "Commande" = true;
 
 
 --
