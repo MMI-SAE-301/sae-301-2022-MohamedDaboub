@@ -1,8 +1,8 @@
 <template>
   <section class="bg-Color-Marronfoncé text-white">
-    <h4 class="text-2xl">
+    <h1 class="text-2xl">
       TiK•Tak le site où vous pouvez personnaliser votre montre comme vous le désirez
-    </h4>
+    </h1>
     <img src="" alt=" Montre Intéligente">
     <div  class="flex justify-center py-10" >
     <RouterLink class="bg-Color-Bluefoncé px-8 py-4" to="/Personnalisation">Personnalisation</RouterLink>
@@ -31,6 +31,21 @@
     </div>
     <div>
       <RouterLink to="/Inspirations"></RouterLink>
+    </div>
+  </section>
+  <section>
+    <h2>Témoignages</h2>
+    <div>
+      <div>
+        <img src="" alt="">
+        <p></p>
+        <h3></h3>
+      </div>
+      <div>
+        <img src="" alt="">
+        <p></p>
+        <h3></h3>
+      </div>
     </div>
   </section>
 </template>
