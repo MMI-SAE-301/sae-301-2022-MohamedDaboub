@@ -14,7 +14,12 @@ CREATE TABLE Montre(
     foreign key (id_user) references auth.users(id),
     foreign key (Matériel_boitier,Matériel_bracelet) references Matériel (code)
 );
-
+CREATE TABLE Matériel
+(
+    code int PRIMARY KEY NOT NULL,
+    Libelle text,
+    URL VARCHAR
+);
 
 
 
