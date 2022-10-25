@@ -29,6 +29,7 @@
 </template>
 <script setup lang="ts">
 
-
 import { Bars3Icon } from '@heroicons/vue/20/solid'
+import {ref} from 'vue'
+const menuOuvert = ref(false)
 </script>
