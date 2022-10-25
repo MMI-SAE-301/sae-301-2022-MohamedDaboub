@@ -1,10 +1,12 @@
 <template>
-    <header class="bg-Color-grisfoncé sticky top-0 z-10">
+    <header class="bg-Color-grisfoncé sticky top-0  z-10 text-white">
         <a href="#content" class="sr-only focus:not-sr-only text-lg text-white">Passez au contenu</a>
         <nav class="lg:flex lg:justify-between items-center">
             <div class="flex justify-between items-center">
+            <RouterLink to="/">
+                <img class="w-1/2 mx-4 my-2" src="./Logo-Site-Montre.png" alt="Logo du site">
+            </RouterLink>
                 <span class="text-3xl cursor-pointer lg:hidden block w-8 h-8 mx-4  ">
-                    <RouterLink to="/">Logo du Site</RouterLink>
                     <Bars3Icon @click="menuOuvert = !menuOuvert" class=" text-white "  >
                     </Bars3Icon>
                     <span class="sr-only ">Menu</span>
@@ -37,7 +39,6 @@
     </header>
 </template>
 <script setup lang="ts">
-
 import { Bars3Icon } from '@heroicons/vue/20/solid'
 import {ref} from 'vue'
 const menuOuvert = ref(false)
