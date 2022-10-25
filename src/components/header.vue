@@ -11,12 +11,21 @@
                 </span>
             </div>
             <!-- menu Mobile -->
+            <transition
+                enter-active-class="transition duration-100 ease-out"
+                enter-from-class="transform scale-95 opacity-0"
+                enter-to-class="transform scale-100 opacity-100"
+                leave-active-class="transition duration-75 ease-out"
+                leave-from-class="transform scale-100 opacity-100"
+                leave-to-class="transform scale-95 opacity-0"
+            >
             <ul :class="{hidden:menuOuvert}" class="lg:hidden text-xl  mx-6 py-4 text-center"  >
                 <li><RouterLink to="/"></RouterLink>Accueil</li>
                 <li><RouterLink to="/Personnalisation"></RouterLink>Personnalisation</li>
                 <li><RouterLink to="/Inspirations"></RouterLink>Inspirations</li>
                 <li><RouterLink to="/Connexion"></RouterLink>Connexion</li>
             </ul>
+            </transition>
             <!-- menu pc  -->
             <ul class="lg:flex  gap-6 lg:items-center text-text  text-xl  mx-6 py-4 hidden">
                 <li><RouterLink to="/"></RouterLink>Accueil</li>
