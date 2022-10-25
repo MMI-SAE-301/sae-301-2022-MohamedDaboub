@@ -5,7 +5,7 @@
             <div class="flex justify-between items-center">
                 <span class="text-3xl cursor-pointer lg:hidden block w-8 h-8 mx-4  ">
                     <RouterLink to="/">Logo du Site</RouterLink>
-                    <Bars3Icon class=" text-white "  >
+                    <Bars3Icon @click="menuOuvert = !menuOuvert" class=" text-white "  >
                     </Bars3Icon>
                     <span class="sr-only ">Menu</span>
                 </span>
