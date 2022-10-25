@@ -20,6 +20,13 @@ CREATE TABLE Matériel
     Libelle text,
     URL VARCHAR
 );
+CREATE TABLE Profil
+(
+    id uuid  NOT NULL,
+    Email VARCHAR,
+    foreign key (id) references auth.users (id),
+    foreign key (Email) references auth.users(Email)
+);
 
 
 
