@@ -6,7 +6,14 @@
         <div>
             <RouterLink to="">Logo du Site</RouterLink>
         </div>
-
+        <!-- menu Mobile -->
+        <ul>
+            <li><RouterLink to=""></RouterLink></li>
+            <li><RouterLink to=""></RouterLink></li>
+            <li><RouterLink to=""></RouterLink></li>
+            <li><RouterLink to=""></RouterLink></li>
+        </ul>
+        <!-- menu pc  -->
         <ul>
             <li><RouterLink to=""></RouterLink></li>
             <li><RouterLink to=""></RouterLink></li>
