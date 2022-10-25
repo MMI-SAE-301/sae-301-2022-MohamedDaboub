@@ -35,6 +35,10 @@ create view allMatériel as
 select *
 from "Matériel";
 
+create view allMontre as
+select *
+from "Montre";
+
 
 
 
