@@ -20,4 +20,17 @@
       </div>
     </div>
   </section>
+  <section>
+    <h2>Inspirations</h2>
+    <div>
+      <!-- fleéche gauche -->
+      <div>
+        <!-- carousel montre -->
+      </div>
+      <!-- fleéche droite -->
+    </div>
+    <div>
+      <RouterLink to="/Inspirations"></RouterLink>
+    </div>
+  </section>
 </template>
