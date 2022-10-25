@@ -4,7 +4,7 @@
         <nav class="lg:flex lg:justify-between items-center">
             <div class="flex justify-between items-center">
                 <RouterLink to="/">Logo du Site</RouterLink>
-                <Bars3Icon class=" "  >
+                <Bars3Icon class=" text-white "  >
                 </Bars3Icon>
             </div>
             <!-- menu Mobile -->
