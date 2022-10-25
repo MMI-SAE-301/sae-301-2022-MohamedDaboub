@@ -4,7 +4,25 @@ const formKitTailwind = require("@formkit/themes/tailwindcss");
 module.exports = {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        "Color": {
+         "grisfoncé": "#262222",
+         "Bluefoncé": "#363553",
+         "white": "#ffffff",
+         "vertfoncé": "#283d31"
+        },
+       },
+      borderRadius: {
+        "borderRadius": {
+          "none": "0",
+          "xs": "0.3125rem",
+          "sm": "0.5590307712554932rem",
+          "default": "0.5636160969734192rem",
+          "lg": "1.9805936813354492rem"
+         }
+      }
+    },
   },
   plugins: [
     require("@tailwindcss/typography"),
