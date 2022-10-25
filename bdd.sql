@@ -58,3 +58,6 @@ CREATE POLICY "Autoriser les utilisateurs à composé leurs Montre"
 CREATE POLICY "Autoriser les utilisateurs à modifier seulement leurs Montre"
 on "Montre" for update to authenticated using ((auth.uid() = id_user) AND ("Commande" = false))
 with check (auth.uid() in (Select id_user from "Montre"));
+
+CREATE POLICY "Enable read access for all users" ON
+    "Montre" USING ((auth.uid() = id_user));
