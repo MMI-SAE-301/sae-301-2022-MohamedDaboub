@@ -21,11 +21,11 @@
                 leave-from-class="transform scale-100 opacity-100"
                 leave-to-class="transform scale-95 opacity-0"
             >
-            <ul :class="{hidden:menuOuvert}" class="lg:hidden text-xl  mx-6 py-4 text-center"  >
-                <li><RouterLink to="/">Accueil</RouterLink></li>
-                <li><RouterLink to="/Personnalisation">Personnalisation</RouterLink></li>
-                <li><RouterLink to="/Inspirations">Inspirations</RouterLink></li>
-                <li><RouterLink to="/Connexion">Connexion</RouterLink></li>
+            <ul :class="{hidden:menuOuvert}" class="lg:hidden text-xl h-full  mx-6 py-4 text-center"  >
+                <li class="my-5"><RouterLink to="/">Accueil</RouterLink></li>
+                <li class="my-5"><RouterLink to="/Personnalisation">Personnalisation</RouterLink></li>
+                <li class="my-5"><RouterLink to="/Inspirations">Inspirations</RouterLink></li>
+                <li class=" bg-Color-Bluefoncé  py-6 px-6 "><RouterLink to="/Connexion">Connexion</RouterLink></li>
             </ul>
             </transition>
             <!-- menu pc  -->
