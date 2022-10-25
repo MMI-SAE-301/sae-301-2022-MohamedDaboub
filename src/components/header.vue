@@ -1,5 +1,5 @@
 <template>
-    <header>
+    <header class="bg-Color-grisfoncé sticky top-0 z-10">
         <a href="#content">Passez au contenu</a>
     
         <nav>
