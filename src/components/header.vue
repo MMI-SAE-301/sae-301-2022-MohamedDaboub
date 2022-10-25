@@ -3,10 +3,12 @@
         <a href="#content" class="sr-only focus:not-sr-only text-lg text-white">Passez au contenu</a>
         <nav class="lg:flex lg:justify-between items-center">
             <div class="flex justify-between items-center">
-                <RouterLink to="/">Logo du Site</RouterLink>
-                <Bars3Icon class=" text-white "  >
-                </Bars3Icon>
-                <span class="sr-only ">Menu</span>
+                <span class="text-3xl cursor-pointer lg:hidden block w-8 h-8 mx-4  ">
+                    <RouterLink to="/">Logo du Site</RouterLink>
+                    <Bars3Icon class=" text-white "  >
+                    </Bars3Icon>
+                    <span class="sr-only ">Menu</span>
+                </span>
             </div>
             <!-- menu Mobile -->
             <ul class="lg:hidden text-xl  mx-6 py-4 text-center"  >
