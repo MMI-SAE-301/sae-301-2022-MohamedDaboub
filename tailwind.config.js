@@ -10,7 +10,8 @@ module.exports = {
          "grisfoncé": "#262222",
          "Bluefoncé": "#363553",
          "white": "#ffffff",
-         "vertfoncé": "#283d31"
+         "vertfoncé": "#283d31",
+         "Marronfoncé": "#2F2828"
         },
        },
       borderRadius: {
