@@ -16,7 +16,7 @@
 
   <!-- Affiche les pages -->
   <Suspense>
-    <router-view class="m-2 border-2 p-2" />
+    <router-view id="content"  />
   </Suspense>
 </template>
 
