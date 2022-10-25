@@ -51,3 +51,6 @@ WHERE "Commande" = true;
 --
 -- code pour la création des policies
 --
+
+CREATE POLICY "Autoriser les utilisateurs à composé leurs Montre"
+    ON "Montre" WITH CHECK (true);
