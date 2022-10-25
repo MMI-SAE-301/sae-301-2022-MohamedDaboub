@@ -21,7 +21,7 @@
                 leave-from-class="transform scale-100 opacity-100"
                 leave-to-class="transform scale-95 opacity-0"
             >
-            <ul :class="{hidden:menuOuvert}" class="lg:hidden text-xl h-full  mx-6 py-4 text-center"  >
+            <ul :class="{hidden:menuOuvert}" class="lg:hidden text-xl h-full    text-center"  >
                 <li class="my-5"><RouterLink to="/">Accueil</RouterLink></li>
                 <li class="my-5"><RouterLink to="/Personnalisation">Personnalisation</RouterLink></li>
                 <li class="my-5"><RouterLink to="/Inspirations">Inspirations</RouterLink></li>
