@@ -5,7 +5,7 @@
 - **URL maquette Figma:** https://www.figma.com/file/4KbBO8sJvEL0eje3Y9FdkM/SAE301?node-id=1%3A45
 - **URL publique du site :**
 - **URL projet Supabase :** db.azbrdgwwpwkbiymlogmh.supabase.co
-  - [ ] Avez-vous invité abdallah.makhoul@univ-fcomte.fr dans votre 'Organisation' Supabase ?
+  - [x] Avez-vous invité abdallah.makhoul@univ-fcomte.fr dans votre 'Organisation' Supabase ?
 
 # Auto-évaluation
 
