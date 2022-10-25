@@ -3,10 +3,10 @@
         <a href="#content" class="sr-only focus:not-sr-only text-lg text-white">Passez au contenu</a>
         <nav class="lg:flex lg:justify-between items-center">
             <div class="flex justify-between items-center">
-                <RouterLink to="">Logo du Site</RouterLink>
+                <RouterLink to="/">Logo du Site</RouterLink>
             </div>
             <!-- menu Mobile -->
-            <ul>
+            <ul class="lg:hidden text-xl  mx-6 py-4 text-center"  >
                 <li><RouterLink to="/"></RouterLink>Accueil</li>
                 <li><RouterLink to="/Personnalisation"></RouterLink>Personnalisation</li>
                 <li><RouterLink to="/Inspirations"></RouterLink>Inspirations</li>
