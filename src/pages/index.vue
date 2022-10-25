@@ -14,8 +14,8 @@
       <div>
         <montre></montre>
         <div>
-          <p></p>
-          <p></p>
+          <p>Tik Tak est une société qui propose à ses clients d’acheter sa propre Montre Tik Tak Smart 1 totalement personnalisable. Nous offrons la possibilité de choisir la couleur de chaque composant de la montre.</p>
+          <p>Tik Tak  vous pousse à affirmer votre personnalité en portant les couleurs que vous souhaitez. Faites preuve d’imagination pour personnaliser vos montres qui vous ressemblent. Votre montre sera aussi unique que vous.</p>
         </div>
       </div>
     </div>
