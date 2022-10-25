@@ -8,4 +8,16 @@
     <RouterLink class="bg-Color-Bluefoncé px-8 py-4" to="/Personnalisation">Personnalisation</RouterLink>
     </div>
   </section>
+  <section>
+    <div>
+      <h2>Histoire de la marque</h2>
+      <div>
+        <montre></montre>
+        <div>
+          <p></p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
