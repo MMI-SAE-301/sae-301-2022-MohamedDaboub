@@ -54,7 +54,9 @@ const exemples: Montre = [{
         </div>
       </div>
     </div>
-
+    <div class="flex justify-center my-10 ">
+      <RouterLink class="bg-Color-Bluefoncé px-8 rounded-lg py-4 text-white " to="/Inspirations">Voir plus d'inspirations</RouterLink>
+    </div>
   </section>
   <section>
     <h2 class=" md:text-4xl lg:text-TitrePC py-10 px-5 font-syncopate text-2xl ">Témoignages</h2>
