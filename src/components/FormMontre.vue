@@ -20,6 +20,15 @@ async function upsertMontre(dataForm, node) {
     router.push({ name: "Personnalisation-edit-id", params: { id: data[0].id } });
   }
 }
+if (props.id) {
+  let { data, error } = await supabase
+    .from("Montre")
+    .select("*")
+    .eq("id", props.id);
+  if (error || !data)
+    console.log("n'a pas pu charger le table Montre :", error);
+  else montre.value = data[0];
+}
 
 
 </script>
