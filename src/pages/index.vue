@@ -10,7 +10,7 @@
   </section>
   <section>
     <div>
-      <h2>Histoire de la marque</h2>
+      <h2 class=" text-3xl md:text-4xl lg:text-5xl py-10 px-5">Histoire de la marque</h2>
       <div>
         <!-- icon montre -->
         <div>
@@ -21,7 +21,7 @@
     </div>
   </section>
   <section>
-    <h2>Inspirations</h2>
+    <h2 class=" text-3xl md:text-4xl lg:text-5xl py-10 px-5">Inspirations</h2>
     <div>
       <!-- fleéche gauche -->
       <div>
@@ -34,8 +34,8 @@
     </div>
   </section>
   <section>
-    <h2 >Témoignages</h2>
-    <div class="flex flex-wrap gap-y-10 text-white justify-between gap-10  mx-4 md:mx-8 lg:mx-24">
+    <h2 class=" text-3xl md:text-4xl lg:text-5xl py-10 px-5">Témoignages</h2>
+    <div class="flex flex-wrap gap-y-10 text-white justify-between gap-10  mx-6 md:mx-8 lg:mx-24">
       <div class="bg-Color-Bluefoncé md:w-[550px] rounded-xl">
         <img src="" alt="">
         <p class="py-10 px-4 text-center">"Les montres sont d'excellente qualité et leur personnalisation est simple."</p>
