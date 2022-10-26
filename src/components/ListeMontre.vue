@@ -14,7 +14,7 @@ if (error) {
 }
 </script>
 <template>
-  <ul class="flex justify-between flex-wrap">
+  <ul class="flex gap-10 justify-center flex-wrap">
     <li v-for="Montre in Montres" :key="Montre.id">
       <router-link
         :to="{ name: 'Personnalisation-edit-id', params: { id: Montre.id } }"
