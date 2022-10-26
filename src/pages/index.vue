@@ -42,7 +42,11 @@ const exemples: Montre = [{
     <h2 class=" md:text-4xl lg:text-TitrePC py-10 px-5 font-syncopate text-2xl ">Inspirations</h2>
     <div>
       <!-- fleéche gauche -->
-
+      <div class="flex justify-center flex-wrap gap-2 ">
+        <div class="w-64" v-for="exemple in exemples " :key="exemple">
+            <montresans class="w-64" v-bind="exemple" />
+        </div>
+      </div>
       <!-- fleéche droite -->
     </div>
     <div>
