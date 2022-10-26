@@ -32,7 +32,11 @@ const exemples: Montre = [{
     <section>
     <h2 class=" text-3xl md:text-4xl lg:text-5xl py-10 px-5">Inspirations</h2>
       <div>
-
+        <div class="flex flex-wrap justify-center  gap-10 ">
+          <div class="w-64   " v-for="exemple in exemples " :key="exemple">
+            <montresans class="w-64" v-bind="exemple" /> 
+          </div>
+        </div>
       </div>
   </section>
   <section>
