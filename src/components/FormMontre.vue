@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import type { Montre, } from '@/types';
-import { colors, } from '@/types';
+import { colors,colorsecran } from '@/types';
 import { ref} from 'vue';
 import { supabase } from '@/supabase';
 import MontreSvg from './montreSvg.vue';
+import formkitlistecolor from "./FormKitListColors.vue"
 import {useRouter} from 'vue-router'
 const router = useRouter()
 const props = defineProps<{
@@ -40,21 +41,27 @@ if (props.id) {
         </div>
         <div class="">
             <h2 class="text-2xl   pb-10">Couleur </h2>
-            <FormKit type="form" v-model="montre" submit-class="" submit-label="Enregistrer votre Montre" @submit="upsertMontre"  >
+            <FormKit type="form" v-model="montre" submit-class="bg-Color-Bluefoncé px-8 rounded-lg py-4 text-white" submit-label="Enregistrer votre Montre"   @submit="upsertMontre" :submit-attrs="{ classes: { input: 'bg-Color-Bluefoncé px-8 rounded-lg py-4 text-white '} }"  >
+                <FormKit name="ecran" label="ecran" value="#FFFFFF" type="radio" :options="colorsecran" :sections-schema="{inner:{$el:null},decorator:{sel:null}}" input-class="peer sr-only" options-class="flex gap-10"><template #label="context"><div class="h-6 w-6 rounded-full border-2 peer-checked:border-red-600" :style="{backgroundColor:context.option.value}"><span class="sr-only">{{context.option.label}}</span></div></template></FormKit>
+                <formkitlistecolor name="bracelet" label="bracelet"/>
+                <formkitlistecolor name="boitier_exterieure" label="boitier_exterieure"/>
+                <formkitlistecolor name="boitier_intérieur" label="boitier_intérieur"/>
+                <FormKit name="Commande" label="Commande" type="checkbox" wrapper-class="w-full flex text-xl "></FormKit>
+                <div>
+                  <h3 class="md:text-2xl text-xl my-5">Tik • Tak Smart 1</h3>
+                  <h2 class="md:text-2xl text-xl my-5">Prix : 300€</h2>
+                </div>
+            </FormKit>
+            <!-- <h2 class="text-2xl   pb-10">Mat </h2> 
+            <FormKit type="form" v-model="montre" @submit="upsertMontre" >
                 <FormKit name="ecran" label="ecran" value="#FFFFFF" type="radio" :options="colors" :sections-schema="{inner:{$el:null},decorator:{sel:null}}" input-class="peer sr-only" options-class="flex gap-10"><template #label="context"><div class="h-6 w-6 rounded-full border-2 peer-checked:border-red-600" :style="{backgroundColor:context.option.value}"><span class="sr-only">{{context.option.label}}</span></div></template></FormKit>
                 <FormKit name="bracelet" label="bracelet" value="#FFFFFF" type="radio" :options="colors" :sections-schema="{inner:{$el:null},decorator:{sel:null}}" input-class="peer sr-only" options-class="flex gap-10"><template #label="context"><div class="h-6 w-6 rounded-full border-2 peer-checked:border-red-600" :style="{backgroundColor:context.option.value}"><span class="sr-only">{{context.option.label}}</span></div></template></FormKit>
                 <FormKit name="boitier_exterieure" label="boitier_exterieure" value="#FFFFFF" type="radio" :options="colors" :sections-schema="{inner:{$el:null},decorator:{sel:null}}" input-class="peer sr-only" options-class="flex gap-10"><template #label="context"><div class="h-6 w-6 rounded-full border-2 peer-checked:border-red-600" :style="{backgroundColor:context.option.value}"><span class="sr-only">{{context.option.label}}</span></div></template></FormKit>
                 <FormKit name="boitier_intérieur" label="boitier_intérieur" value="#FFFFFF" type="radio" :options="colors" :sections-schema="{inner:{$el:null},decorator:{sel:null}}" input-class="peer sr-only" options-class="flex gap-10"><template #label="context"><div class="h-6 w-6 rounded-full border-2 peer-checked:border-red-600" :style="{backgroundColor:context.option.value}"><span class="sr-only">{{context.option.label}}</span></div></template></FormKit>
-                <FormKit name="Commande" label="Commande" type="checkbox" wrapper-class="w-full flex text-xl "></FormKit>
-            </FormKit>
+            </FormKit> -->
+
         </div>
-        <!-- <h2 class="text-2xl   pb-10">Mat </h2> 
-        <FormKit type="form" v-model="montre" @submit="upsertMontre" >
-            <FormKit name="ecran" label="ecran" value="#FFFFFF" type="radio" :options="colors" :sections-schema="{inner:{$el:null},decorator:{sel:null}}" input-class="peer sr-only" options-class="flex gap-10"><template #label="context"><div class="h-6 w-6 rounded-full border-2 peer-checked:border-red-600" :style="{backgroundColor:context.option.value}"><span class="sr-only">{{context.option.label}}</span></div></template></FormKit>
-            <FormKit name="bracelet" label="bracelet" value="#FFFFFF" type="radio" :options="colors" :sections-schema="{inner:{$el:null},decorator:{sel:null}}" input-class="peer sr-only" options-class="flex gap-10"><template #label="context"><div class="h-6 w-6 rounded-full border-2 peer-checked:border-red-600" :style="{backgroundColor:context.option.value}"><span class="sr-only">{{context.option.label}}</span></div></template></FormKit>
-            <FormKit name="boitier_exterieure" label="boitier_exterieure" value="#FFFFFF" type="radio" :options="colors" :sections-schema="{inner:{$el:null},decorator:{sel:null}}" input-class="peer sr-only" options-class="flex gap-10"><template #label="context"><div class="h-6 w-6 rounded-full border-2 peer-checked:border-red-600" :style="{backgroundColor:context.option.value}"><span class="sr-only">{{context.option.label}}</span></div></template></FormKit>
-            <FormKit name="boitier_intérieur" label="boitier_intérieur" value="#FFFFFF" type="radio" :options="colors" :sections-schema="{inner:{$el:null},decorator:{sel:null}}" input-class="peer sr-only" options-class="flex gap-10"><template #label="context"><div class="h-6 w-6 rounded-full border-2 peer-checked:border-red-600" :style="{backgroundColor:context.option.value}"><span class="sr-only">{{context.option.label}}</span></div></template></FormKit>
-        </FormKit> -->
+
 
     </div>
 </template>
