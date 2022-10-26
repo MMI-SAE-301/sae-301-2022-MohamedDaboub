@@ -4,7 +4,7 @@ import star from "../components/Icons/Star.vue"
 
 <template>
     <section>
-        <h1 class=" text-3xl md:text-4xl lg:text-5xl py-10 px-5 ">Exemples de Montre</h1>
+        <h1 class=" text-3xl md:text-4xl lg:text-5xl py-10 px-5 font-syncopate ">Exemples de Montre</h1>
         <div class=" grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-10 mx-5 md:mx-10">
             <div class="bg-Color-Bluefoncé rounded-xl" >
                 <img src="/public/img/Montre1.png" class="flex justify-center m-auto " alt="">

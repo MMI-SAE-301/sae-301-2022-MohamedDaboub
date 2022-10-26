@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <h1 class=" text-3xl md:text-4xl lg:text-5xl py-10 px-5 text-center">Personnaliser</h1>  
+    <h1 class=" text-3xl md:text-4xl lg:text-5xl py-10 px-5 text-center font-syncopate">Personnaliser</h1>  
     <div>
         <!-- import  -->
     </div>  
