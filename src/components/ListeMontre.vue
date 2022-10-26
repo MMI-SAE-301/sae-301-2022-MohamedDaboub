@@ -16,11 +16,19 @@ if (error) {
 <template>
   <ul class="flex gap-10 justify-center flex-wrap">
     <li v-for="Montre in Montres" :key="Montre.id">
-      <router-link
-        :to="{ name: 'Personnalisation-edit-id', params: { id: Montre.id } }"
-      >
-        <Montre class="w-64" v-bind="Montre" />
-      </router-link>
+      <Montre class="w-64" v-bind="Montre" />
+      <div class="my-10 gap-5 flex justify-between">
+        <router-link class="bg-Color-Bluefoncé px-8 rounded-lg py-4 text-white "
+          :to="{ name: 'Payement', params: { id: Montre.id } }"
+        >
+        Payer 
+        </router-link>
+        <router-link class="border-Color-Bluefoncé border-2 text-Color-Bluefoncé px-8 rounded-lg py-4 "
+          :to="{ name: 'Personnalisation-edit-id', params: { id: Montre.id } }"
+        >
+        Modifier 
+        </router-link>
+      </div>
     </li>
   </ul>
 </template>
