@@ -37,28 +37,29 @@ const nvlUtilisateur = ref(false);
         </button>
       </div>
     </div>
-  <div class="">
-    <h2 class="font-bold text-2xl py-5">connecter avec Mail</h2>
-    <button v-if="user" @pointerdown="supabase.auth.signOut()">
-      Se déconnecter ({{ user.email }})
-    </button>
-    <FormKit
-      v-else
-      type="form"
-      :submit-label="nvlUtilisateur ? 'S\'inscrire' : 'Se connecter'"
-      @submit="signIn"
-      :submit-attrs="{ classes: { input: 'bg-blue-900 px-6 justify-center w-full   py-4 text-white flex my-4 centre rounded' }}">
-      <FormKit name="email" label="Votre email" type="email" wrapper-class="text-xl w-full " />
-      <FormKit name="password" label="Mot de passe" type="password" wrapper-class="text-xl w-full " />
-      <formKit
-        label="Nouvel utilisateur ?"
-        name="nvlUtilisateur"
-        type="checkbox"
-        v-model="nvlUtilisateur"
-        wrapper-class="w-full flex py-4 text-xl "
-      />
-    </FormKit>
-    
+  <div class="bg-Color-Bluefoncé flex justify-center my-10 mx-[35%] rounded-xl text-white ">
+    <div>
+        <h2 class="font-bold text-2xl py-5">Connecter avec Mail</h2>
+        <button v-if="user" @pointerdown="supabase.auth.signOut()">
+        Se déconnecter ({{ user.email }})
+        </button>
+        <FormKit
+        v-else
+        type="form"
+        :submit-label="nvlUtilisateur ? 'S\'inscrire' : 'Se connecter'"
+        @submit="signIn"
+        :submit-attrs="{ classes: { input: 'bg-blue-900 px-6 justify-center w-full   py-4 text-white flex my-4 centre rounded' }}">
+        <FormKit name="email" label="Votre email" type="email" wrapper-class="text-xl w-full " />
+        <FormKit name="password" label="Mot de passe" type="password" wrapper-class="text-xl w-full " />
+        <formKit
+            label="Nouvel utilisateur ?"
+            name="nvlUtilisateur"
+            type="checkbox"
+            v-model="nvlUtilisateur"
+            wrapper-class="w-full flex py-4 text-xl "
+        />
+        </FormKit>
+    </div>
   </div>
   
 </template>
