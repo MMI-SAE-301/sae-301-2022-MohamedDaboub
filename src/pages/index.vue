@@ -1,3 +1,7 @@
+<script  setup lang="ts">
+import montre from "../components/montreSvg.vue"
+</script>
+
 <template>
   <section class="bg-Color-Marronfoncé text-white ">
     <h1 class="text-2xl p-5 ">
@@ -11,11 +15,11 @@
   <section>
     <div>
       <h2 class=" text-3xl md:text-4xl lg:text-5xl py-10 px-5">Histoire de la marque</h2>
-      <div>
-        <!-- icon montre -->
-        <div>
-          <p>Tik Tak est une société qui propose à ses clients d’acheter sa propre Montre Tik Tak Smart 1 totalement personnalisable. Nous offrons la possibilité de choisir la couleur de chaque composant de la montre.</p>
-          <p>Tik Tak  vous pousse à affirmer votre personnalité en portant les couleurs que vous souhaitez. Faites preuve d’imagination pour personnaliser vos montres qui vous ressemblent. Votre montre sera aussi unique que vous.</p>
+      <div class="flex justify-between items-center gap-10  mx-[10%]">
+        <montre class="w-1/3"></montre>
+        <div class=" mx-10">
+          <p class="py-10 mx-10">Tik Tak est une société qui propose à ses clients d’acheter sa propre Montre Tik Tak Smart 1 totalement personnalisable. Nous offrons la possibilité de choisir la couleur de chaque composant de la montre.</p>
+          <p class="py-10 mx-10">Tik Tak  vous pousse à affirmer votre personnalité en portant les couleurs que vous souhaitez. Faites preuve d’imagination pour personnaliser vos montres qui vous ressemblent. Votre montre sera aussi unique que vous.</p>
         </div>
       </div>
     </div>
