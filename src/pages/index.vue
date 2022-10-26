@@ -64,9 +64,9 @@ const exemples: Montre = [{
     <h2 class=" md:text-4xl lg:text-TitrePC py-10 px-5 font-syncopate text-2xl ">Témoignages</h2>
     <div class="flex flex-wrap gap-y-10 text-white sm:justify-center  gap-10   mx-4 md:mx-8 xl:mx-32 mb-10">
       <div class="bg-Color-Bluefoncé sm:w-1/3 rounded-xl">
-        <img src="/img/imageuser1.png" class="w-1/4 my-5 rounded-full flex justify-center m-auto" alt="">
+        <img src="/img/imageuser1.png" class="md:w-1/4  my-5 rounded-full flex justify-center m-auto" alt="">
         <p class="py-10 px-4 text-center text-base md:text-CardText">"Les montres sont d'excellente qualité et leur personnalisation est simple."</p>
-        <h3 class="py-5 px-4">- Jade Berger</h3>
+        <h3 class="py-5 px-4  mt-16">- Jade Berger</h3>
       </div>
       <div class="bg-Color-Bluefoncé sm:w-1/3 rounded-xl">
         <img src="/img/imageuser2.png" class="w-1/4 my-5 rounded-full flex justify-center m-auto" alt="">

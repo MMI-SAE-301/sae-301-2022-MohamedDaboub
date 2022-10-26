@@ -14,7 +14,7 @@
                 <RouterLink to="" class="my-3 block  hover:text-gray-100 lg:text-xl text-base lg:mx-4 mx-2  font-normal duration-700">
                     À propos
                 </RouterLink>
-                <RouterLink to="/" class="my-3 block  hover:text-gray-100 lg:text-xl text-base lg:mx-4 mx-2  font-normal duration-700">
+                <RouterLink v-if="user" to="/vosModèles" class="my-3 block  hover:text-gray-100 lg:text-xl text-base lg:mx-4 mx-2  font-normal duration-700">
                     Votre sélection
                 </RouterLink>
         </div>
@@ -41,6 +41,7 @@
             <div class="uppercase xl:text-2xl text-lg   font-bold mb-6">
                 Où nous trouver
             </div>
+            <img src="/img/Maps.png" alt="">
         </div>
             
     </div>
@@ -57,4 +58,5 @@
 </footer>
 </template>
 <script setup lang="ts">
+import { user} from "../supabase";
 </script>
