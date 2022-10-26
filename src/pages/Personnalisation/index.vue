@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import star from "../../components/Icons/Star.vue"
+import starvide from "../../components/Icons/Starvi.vue"
 import montreavec from "../../components/FormMontre.vue"
 import montresans from "../../components/montreSvg.vue"
 import type { Montre } from "../../types"; 
@@ -41,24 +43,38 @@ const exemples: Montre = [{
   </section>
   <section>
     <h2 class=" text-3xl md:text-4xl lg:text-5xl py-10 px-5">Les modèles les mieux notés</h2>
-    <div>
-        <img src="" alt="">
-        <div>
-            <!-- etoile -->
+    <div class=" grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-10 mx-5 md:mx-10 my-10">
+            <div class="bg-Color-Bluefoncé rounded-xl" >
+                <img src="/public/img/Montre1.png" class="flex justify-center m-auto " alt="">
+                <div class="flex md:gap-6 gap-2  lg:gap-3 py-4  justify-center ">
+                    <star class=" w-8 md:w-6  lg:w-12"></star>
+                    <star class=" w-8 md:w-6  lg:w-12"></star>
+                    <star class=" w-8 md:w-6  lg:w-12"></star>
+                    <star class=" w-8 md:w-6  lg:w-12"></star>
+                    <starvide class=" w-8 md:w-6  lg:w-12 "></starvide>
+                </div>
+            </div>
+            <div class="bg-Color-Bluefoncé rounded-xl" >
+                <img src="/public/img/Montre2.png" class="flex justify-center m-auto sm:h-[385px]" alt="">
+                <div class="flex md:gap-6 gap-2  lg:gap-3 py-4  justify-center ">
+                    <star class=" w-8 md:w-6  lg:w-12"></star>
+                    <star class=" w-8 md:w-6  lg:w-12"></star>
+                    <star class=" w-8 md:w-6  lg:w-12"></star>
+                    <star class=" w-8 md:w-6  lg:w-12"></star>
+                    <starvide class=" w-8 md:w-6  lg:w-12"></starvide>
+                </div>
+            </div>
+            <div class="bg-Color-Bluefoncé rounded-xl" >
+                <img src="/public/img/Montre3.png" class="flex justify-center m-auto sm:h-[385px] " alt="">
+                <div class="flex md:gap-6 gap-2  lg:gap-3 py-4  justify-center ">
+                    <star class=" w-8 md:w-6  lg:w-12"></star>
+                    <star class=" w-8 md:w-6  lg:w-12"></star>
+                    <star class=" w-8 md:w-6  lg:w-12"></star>
+                    <star class=" w-8 md:w-6  lg:w-12"></star>
+                    <starvide class=" w-8 md:w-6  lg:w-12"></starvide>
+                </div>
+            </div>
         </div>
-    </div>
-    <div>
-        <img src="" alt="">
-        <div>
-            <!-- etoile -->
-        </div>
-    </div>
-    <div>
-        <img src="" alt="">
-        <div>
-            <!-- etoile -->
-        </div>
-    </div>
     <div>
       <RouterLink to="/Inspirations"></RouterLink>
     </div>
