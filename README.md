@@ -55,7 +55,7 @@ Noté sur 40.
     - liens
 - "tailwin.config.js" (0-1-2pts)
   - [ ] usage basique couleurs/fonts
-  - [ ] Comporte des données supplémentaires (utilisées !). Eg: "content-xxx", "bg-xxx", "grid-cols-xxx"...
+  - [x] Comporte des données supplémentaires (utilisées !). Eg: "content-xxx", "bg-xxx", "grid-cols-xxx"...
     - liens
 - Composants "accessibles" (0-1-2pts)
   - [ ] textes "accessibles" (eg. 'sr-only')
