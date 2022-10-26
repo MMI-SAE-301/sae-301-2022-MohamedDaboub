@@ -37,12 +37,12 @@
     <h2 class=" text-3xl md:text-4xl lg:text-5xl py-10 px-5">Témoignages</h2>
     <div class="flex flex-wrap gap-y-10 text-white justify-between gap-10  mx-6 md:mx-8 lg:mx-24">
       <div class="bg-Color-Bluefoncé md:w-[550px] rounded-xl">
-        <img src="" alt="">
+        <img src="/img/imageuser1.png" class="w-1/4 my-5 rounded-full flex justify-center m-auto" alt="">
         <p class="py-10 px-4 text-center">"Les montres sont d'excellente qualité et leur personnalisation est simple."</p>
         <h3 class="py-5 px-4">- Jade Berger</h3>
       </div>
       <div class="bg-Color-Bluefoncé md:w-[550px] rounded-xl">
-        <img src="" alt="">
+        <img src="/img/imageuser2.png" class="w-1/4 my-5 rounded-full flex justify-center m-auto" alt="">
         <p class="py-10 px-4 text-center">"La personnalisation encourage la créativité et vous permet d'avoir des Montres qui vous sont uniques." "J'adore vraiment !"</p>
         <h3 class="py-5 px-4">- Raphaël Simon</h3>
       </div>
