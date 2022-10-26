@@ -29,6 +29,17 @@ if (props.id) {
     console.log("n'a pas pu charger le table Montre :", error);
   else montre.value = data[0];
 }
-
-
 </script>
+<template>
+    <div class="p-2 my-10   ">
+        <h2 class="text-2xl font-bold  pb-10">Personnaliser vos chaussures </h2>
+        <ul class="flex gap-5">
+            <li><a href="#MontreSvg">Profil</a></li>
+
+        </ul>
+        <div class="carousel w-64">
+            <MontreSvg class="carousel-item w-64" v-bind="montre" id="Profil"/>   
+        </div>
+
+    </div>
+</template>
