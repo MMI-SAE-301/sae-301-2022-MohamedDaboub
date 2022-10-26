@@ -17,7 +17,7 @@ const nvlUtilisateur = ref(false);
     <h1 class=" text-3xl md:text-4xl lg:text-5xl py-10 px-5 text-center">Se connecter</h1>
     <div class="flex flex-wrap gap-y-6 justify-center gap-x-10">
       <div>
-        <button class="bg-Color-Bluefoncé px-8 py-4 text-white flex rounded-lg items-center gap-2 mx-2" v-if="user" @pointerdown="supabase.auth.signOut()">
+        <button class="bg-Color-Bluefoncé px-8 py-4 text-white flex rounded-lg items-center gap-1 mx-2" v-if="user" @pointerdown="supabase.auth.signOut()">
             <img class="md:w-2/12 w-1/12 " src="../assets/Google.png" alt="">
           Se déconnecter ({{user.email}})
         </button>
@@ -27,12 +27,12 @@ const nvlUtilisateur = ref(false);
         </button>
       </div>
       <div>
-        <button class="bg-Color-Bluefoncé px-8 py-4 text-white rounded-lg" v-if="user" @pointerdown="supabase.auth.signOut()">
-            <img src="" alt="">
+        <button class="bg-Color-Bluefoncé px-8 py-4 text-white flex rounded-lg items-center gap-1 mx-2" v-if="user" @pointerdown="supabase.auth.signOut()">
+            <img class="md:w-2/12 w-1/12 " src="../assets/Facebook.png" alt="">
           Se déconnecter ({{user.email}})
         </button>
-        <button class="bg-Color-Bluefoncé px-8 py-4 text-white rounded-lg" v-else @pointerdown="supabase.auth.signIn({provider: 'facebook'})">
-            <img src="" alt="">
+        <button class="bg-Color-Bluefoncé px-8 py-4 text-white flex rounded-lg items-center gap-2 mx-2" v-else @pointerdown="supabase.auth.signIn({provider: 'facebook'})">
+            <img class="md:w-2/12 w-1/12 " src="../assets/Facebook.png" alt="">
             Se connecter avec Facebook
         </button>
       </div>
