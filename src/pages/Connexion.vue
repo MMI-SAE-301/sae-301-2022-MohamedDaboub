@@ -14,7 +14,7 @@ async function signIn(data, node) {
 const nvlUtilisateur = ref(false);
 </script>
 <template>
-    <h1>Se connecter</h1>
+    <h1 class=" text-3xl md:text-4xl lg:text-5xl py-10 px-5 text-center">Se connecter</h1>
     <div class="flex flex-wrap gap-y-6 justify-center gap-x-10">
       <div>
         <button class="bg-Color-Bluefoncé px-8 py-4 text-white rounded-lg" v-if="user" @pointerdown="supabase.auth.signOut()">
@@ -37,7 +37,7 @@ const nvlUtilisateur = ref(false);
         </button>
       </div>
     </div>
-  <div class="bg-Color-Bluefoncé flex justify-center my-10 mx-[35%] rounded-xl text-white ">
+  <div class="bg-Color-Bluefoncé flex justify-center my-10 mx-[10%] md:mx-[30%] lg:mx-[35%] rounded-xl text-white ">
     <div>
         <h2 class="font-bold text-2xl py-5">Connecter avec Mail</h2>
         <button v-if="user" @pointerdown="supabase.auth.signOut()">
