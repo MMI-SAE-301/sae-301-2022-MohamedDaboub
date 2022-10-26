@@ -3,12 +3,12 @@
 </script>
 
 <template>
-    <h1>Personnaliser</h1>  
+    <h1 class=" text-3xl md:text-4xl lg:text-5xl py-10 px-5 text-center">Personnaliser</h1>  
     <div>
         <!-- import  -->
     </div>  
     <section>
-    <h2>Inspirations</h2>
+    <h2 class=" text-3xl md:text-4xl lg:text-5xl py-10 px-5">Inspirations</h2>
     <div>
       <!-- fleéche gauche -->
       <div>
@@ -18,7 +18,7 @@
     </div>
   </section>
   <section>
-    <h2>Les modèles les mieux notés</h2>
+    <h2 class=" text-3xl md:text-4xl lg:text-5xl py-10 px-5">Les modèles les mieux notés</h2>
     <div>
         <img src="" alt="">
         <div>
