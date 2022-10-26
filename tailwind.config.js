@@ -22,7 +22,13 @@ module.exports = {
           "default": "0.5636160969734192rem",
           "lg": "1.9805936813354492rem"
          }
-      }
+      },
+      "gridTemplateColumns": {
+        "colonne2": "grid-cols-[repeat(auto-fit,minmax(285px,1fr))]"
+      },
+      "boxShadow": {
+        "contact": "inset 7px 5px 10px 3px rgba(0,0,0,0.25)"
+      },
     },
   },
   plugins: [

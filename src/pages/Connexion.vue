@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import type { label } from "@formkit/inputs";
 import { ref } from "@vue/reactivity";
 import { supabase, user } from "../supabase";
 async function signIn(data, node) {
@@ -48,7 +49,7 @@ const nvlUtilisateur = ref(false);
         type="form"
         :submit-label="nvlUtilisateur ? 'S\'inscrire' : 'Se connecter'"
         @submit="signIn"
-        :submit-attrs="{ classes: { input: 'bg-Color-vertfoncé px-6  justify-center w-full   py-4 text-white flex my-4 centre rounded' }}">
+        :submit-attrs="{ classes: { input: 'bg-Color-vertfoncé px-6  justify-center w-full   py-4 text-white flex my-4 centre rounded shadow-contact'} }">
         <FormKit name="email" label="Votre email" type="email" wrapper-class="text-xl w-full  " />
         <FormKit name="password" label="Mot de passe" type="password" wrapper-class="text-xl w-full " />
         <formKit
