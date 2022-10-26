@@ -14,7 +14,20 @@ async function signIn(data, node) {
 const nvlUtilisateur = ref(false);
 </script>
 <template>
-  <div class="bg-blue-300 w-full">
+    <h1>Se connecter</h1>
+    <div>
+      <div>
+        <button class="bg-Color-Bluefoncé px-8 py-4 text-white rounded-lg" v-if="user" @pointerdown="supabase.auth.signOut()">
+            <img src="" alt="">
+          Se déconnecter ({{user.email}})
+        </button>
+        <button class="bg-Color-Bluefoncé px-8 py-4 text-white rounded-lg" v-else @pointerdown="supabase.auth.signIn({provider: 'google'})">
+            <img src="" alt="">
+            Se connecter avec google
+        </button>
+      </div>
+    </div>
+  <div class="">
     <h2 class="font-bold text-2xl py-5">connecter avec Mail</h2>
     <button v-if="user" @pointerdown="supabase.auth.signOut()">
       Se déconnecter ({{ user.email }})
@@ -35,18 +48,7 @@ const nvlUtilisateur = ref(false);
         wrapper-class="w-full flex py-4 text-xl "
       />
     </FormKit>
-    <hr class="h-5"/>
-    <div>
-      <h2 class="font-bold text-2xl PY-5">Se connecter avec Github</h2>
-      <div class="border-2 p-4 pb-5">
-        <button v-if="user" @pointerdown="supabase.auth.signOut()">
-          Se déconnecter ({{user.email}})
-        </button>
-        <button v-else @pointerdown="supabase.auth.signIn({provider: 'github'})">
-            Se connecter avec Github
-        </button>
-      </div>
-    </div>
+    
   </div>
   
 </template>
