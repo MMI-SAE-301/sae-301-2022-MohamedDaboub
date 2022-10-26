@@ -45,7 +45,7 @@
             
     </div>
     <div class="pt-2">
-        <div class="flex pb-5 px-3 m-auto pt-5 border-t border-t-Color-vertfoncé  bord text-white text-base  flex-col md:flex-row  lg:flex lg:justify-between sm:justify-center ">
+        <div class="flex pb-5 px-3 m-auto pt-5 border-t border-t-Color-vertfoncé text-white text-base  flex-col md:flex-row  lg:flex lg:justify-between sm:justify-center ">
             <div class="mt-2 text-center px-10">
                 ©2022 TiK•TaK. All rights reserved
             </div>
