@@ -5,18 +5,18 @@
             <div class="xl:text-2xl text-lg uppercase  font-bold mb-6">
                 LIEN
             </div>
-                <a href="#" class="my-3 block  hover:text-gray-100 lg:text-xl text-base lg:mx-4 mx-2 font-normal duration-700">
+                <RouterLink to="/Personnalisation" class="my-3 block  hover:text-gray-100 lg:text-xl text-base lg:mx-4 mx-2 font-normal duration-700">
                     Personnalisation
-                </a>
-                <a href="#" class="my-3 block  hover:text-gray-100 lg:text-xl text-base lg:mx-4 mx-2  font-normal duration-700">
+                </RouterLink>
+                <RouterLink to="/Inspirations" class="my-3 block  hover:text-gray-100 lg:text-xl text-base lg:mx-4 mx-2  font-normal duration-700">
                     Inspirations
-                </a>
-                <a href="#" class="my-3 block  hover:text-gray-100 lg:text-xl text-base lg:mx-4 mx-2  font-normal duration-700">
+                </RouterLink>
+                <RouterLink to="" class="my-3 block  hover:text-gray-100 lg:text-xl text-base lg:mx-4 mx-2  font-normal duration-700">
                     À propos
-                </a>
-                <a href="#" class="my-3 block  hover:text-gray-100 lg:text-xl text-base lg:mx-4 mx-2  font-normal duration-700">
+                </RouterLink>
+                <RouterLink to="/" class="my-3 block  hover:text-gray-100 lg:text-xl text-base lg:mx-4 mx-2  font-normal duration-700">
                     Votre sélection
-                </a>
+                </RouterLink>
         </div>
         <div class="p-5 w-1/2 sm:w-4/12 md:w-3/12">
             <div class="xl:text-2xl text-lg uppercase  font-bold mb-6">
