@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import star from "../components/Icons/Star.vue"
+import starvide from "../components/Icons/Starvi.vue"
 </script>
 
 <template>
@@ -13,7 +14,7 @@ import star from "../components/Icons/Star.vue"
                     <star class=" w-8 md:w-6  lg:w-12"></star>
                     <star class=" w-8 md:w-6  lg:w-12"></star>
                     <star class=" w-8 md:w-6  lg:w-12"></star>
-                    <star class=" w-8 md:w-6  lg:w-12"></star>
+                    <starvide class=" w-8 md:w-6  lg:w-12 "></starvide>
                 </div>
             </div>
             <div class="bg-Color-Bluefoncé rounded-xl" >
@@ -23,7 +24,7 @@ import star from "../components/Icons/Star.vue"
                     <star class=" w-8 md:w-6  lg:w-12"></star>
                     <star class=" w-8 md:w-6  lg:w-12"></star>
                     <star class=" w-8 md:w-6  lg:w-12"></star>
-                    <star class=" w-8 md:w-6  lg:w-12"></star>
+                    <starvide class=" w-8 md:w-6  lg:w-12"></starvide>
                 </div>
             </div>
             <div class="bg-Color-Bluefoncé rounded-xl" >
@@ -33,7 +34,7 @@ import star from "../components/Icons/Star.vue"
                     <star class=" w-8 md:w-6  lg:w-12"></star>
                     <star class=" w-8 md:w-6  lg:w-12"></star>
                     <star class=" w-8 md:w-6  lg:w-12"></star>
-                    <star class=" w-8 md:w-6  lg:w-12"></star>
+                    <starvide class=" w-8 md:w-6  lg:w-12"></starvide>
                 </div>
             </div>
         </div>
