@@ -29,6 +29,10 @@ module.exports = {
       "boxShadow": {
         "contact": "inset 7px 5px 10px 3px rgba(0,0,0,0.25)"
       },
+      "fontFamily": {
+        "titillium-web": "Titillium Web",
+        "syncopate": "Syncopate"
+       },
     },
   },
   plugins: [
