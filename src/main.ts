@@ -17,6 +17,10 @@ const router = createRouter({
     // en plus de celles faites automatiquement
     ...routesFromPages,
   ],
+  scrollBehavior(to, from, savedPosition) {
+    // always scroll to top
+    return savedPosition || { top: 0 }
+  },
 });
 
 const app = createApp(App);
