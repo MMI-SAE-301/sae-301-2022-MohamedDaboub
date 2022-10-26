@@ -2,7 +2,15 @@
 import montresans from "../components/montreSvg.vue"
 import type { Montre } from "../types"; 
 import { supabase } from "../supabase";
+const exemples: Montre = [{
+  ecran : "#white",
+  bracelet : "White",
+  boitier_exterieure :"White",
+  boitier_intérieur :"White",
+},
+{
 
+},];
 </script>
 
 <template>
