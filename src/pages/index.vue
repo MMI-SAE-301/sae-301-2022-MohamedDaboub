@@ -34,17 +34,17 @@
     </div>
   </section>
   <section>
-    <h2>Témoignages</h2>
-    <div class="flex text-white gap-5 md:gap-8 lg:gap-12 mx-4 md:mx-8 lg:mx-12">
-      <div class="bg-Color-Bluefoncé rounded-xl">
+    <h2 >Témoignages</h2>
+    <div class="flex flex-wrap gap-y-10 text-white justify-between gap-10  mx-4 md:mx-8 lg:mx-24">
+      <div class="bg-Color-Bluefoncé md:w-[550px] rounded-xl">
         <img src="" alt="">
         <p class="py-10 px-4 text-center">"Les montres sont d'excellente qualité et leur personnalisation est simple."</p>
         <h3 class="py-5 px-4">- Jade Berger</h3>
       </div>
-      <div>
+      <div class="bg-Color-Bluefoncé md:w-[550px] rounded-xl">
         <img src="" alt="">
-        <p>"La personnalisation encourage la créativité et vous permet d'avoir des Montres qui vous sont uniques." "J'adore vraiment !"</p>
-        <h3>- Raphaël Simon</h3>
+        <p class="py-10 px-4 text-center">"La personnalisation encourage la créativité et vous permet d'avoir des Montres qui vous sont uniques." "J'adore vraiment !"</p>
+        <h3 class="py-5 px-4">- Raphaël Simon</h3>
       </div>
     </div>
   </section>
