@@ -15,7 +15,7 @@ const nvlUtilisateur = ref(false);
 </script>
 <template>
     <h1>Se connecter</h1>
-    <div>
+    <div class="flex flex-wrap gap-y-6 justify-center gap-x-10">
       <div>
         <button class="bg-Color-Bluefoncé px-8 py-4 text-white rounded-lg" v-if="user" @pointerdown="supabase.auth.signOut()">
             <img src="" alt="">
@@ -23,7 +23,17 @@ const nvlUtilisateur = ref(false);
         </button>
         <button class="bg-Color-Bluefoncé px-8 py-4 text-white rounded-lg" v-else @pointerdown="supabase.auth.signIn({provider: 'google'})">
             <img src="" alt="">
-            Se connecter avec google
+            Se connecter avec Google
+        </button>
+      </div>
+      <div>
+        <button class="bg-Color-Bluefoncé px-8 py-4 text-white rounded-lg" v-if="user" @pointerdown="supabase.auth.signOut()">
+            <img src="" alt="">
+          Se déconnecter ({{user.email}})
+        </button>
+        <button class="bg-Color-Bluefoncé px-8 py-4 text-white rounded-lg" v-else @pointerdown="supabase.auth.signIn({provider: 'facebook'})">
+            <img src="" alt="">
+            Se connecter avec Facebook
         </button>
       </div>
     </div>
