@@ -1,11 +1,11 @@
 <script setup lang="ts">
-
+import montre from "../../components/FormMontre.vue"
 </script>
 
 <template>
     <h1 class=" text-3xl md:text-4xl lg:text-5xl py-10 px-5 text-center font-syncopate">Personnaliser</h1>  
     <div>
-        <!-- import  -->
+        <montre/>
     </div>  
     <section>
     <h2 class=" text-3xl md:text-4xl lg:text-5xl py-10 px-5">Inspirations</h2>

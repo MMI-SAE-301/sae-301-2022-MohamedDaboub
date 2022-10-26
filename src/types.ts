@@ -1,8 +1,8 @@
 export interface Montre {
-  Écran?: string;
-  Bracelet?: string;
-  Boitier_exterieure?: string;
-  Boitier_intérieur?: string;
+  ecran?: string;
+  bracelet?: string;
+  boitier_exterieure?: string;
+  boitier_intérieur?: string;
 }
 export const colors = {
   "#363553": "Bleu foncé",

@@ -39,7 +39,13 @@ if (props.id) {
         </ul>
         <div class="carousel w-64">
             <MontreSvg class="carousel-item w-64" v-bind="montre" id="Profil"/>   
-        </div>
+        </div>  
+        <FormKit type="form" v-model="montre" >
+            <FormKit name="ecran" label="ecran" value="#FFFFFF" type="radio" :options="colors" :sections-schema="{inner:{$el:null},decorator:{sel:null}}" input-class="peer sr-only" options-class="flex gap-10"><template #label="context"><div class="h-6 w-6 rounded-full border-2 peer-checked:border-red-600" :style="{backgroundColor:context.option.value}"><span class="sr-only">{{context.option.label}}</span></div></template></FormKit>
+            <FormKit name="bracelet" label="bracelet" value="#FFFFFF" type="radio" :options="colors" :sections-schema="{inner:{$el:null},decorator:{sel:null}}" input-class="peer sr-only" options-class="flex gap-10"><template #label="context"><div class="h-6 w-6 rounded-full border-2 peer-checked:border-red-600" :style="{backgroundColor:context.option.value}"><span class="sr-only">{{context.option.label}}</span></div></template></FormKit>
+            <FormKit name="boitier_exterieure" label="boitier_exterieure" value="#FFFFFF" type="radio" :options="colors" :sections-schema="{inner:{$el:null},decorator:{sel:null}}" input-class="peer sr-only" options-class="flex gap-10"><template #label="context"><div class="h-6 w-6 rounded-full border-2 peer-checked:border-red-600" :style="{backgroundColor:context.option.value}"><span class="sr-only">{{context.option.label}}</span></div></template></FormKit>
+            <FormKit name="boitier_intérieur" label="boitier_intérieur" value="#FFFFFF" type="radio" :options="colors" :sections-schema="{inner:{$el:null},decorator:{sel:null}}" input-class="peer sr-only" options-class="flex gap-10"><template #label="context"><div class="h-6 w-6 rounded-full border-2 peer-checked:border-red-600" :style="{backgroundColor:context.option.value}"><span class="sr-only">{{context.option.label}}</span></div></template></FormKit>
+        </FormKit>
 
     </div>
 </template>

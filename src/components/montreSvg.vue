@@ -1,10 +1,10 @@
 <script setup lang="ts">
     import type  {Montre} from '@/types'
     withDefaults(defineProps<Montre>(),{
-    Écran : "White",
-    Bracelet : "White",
-    Boitier_exterieure :"White",
-    Boitier_intérieur :"White",
+    ecran : "White",
+    bracelet : "White",
+    boitier_exterieure :"White",
+    boitier_intérieur :"White",
 });
 </script>
 <template>
@@ -109,14 +109,14 @@
   </defs>
   <g id="Calque_2" data-name="Calque 2">
     <g id="bracelet" class="bracelet">
-      <path class="cls-34" :fill="Bracelet"  d="M92.49,29S144.66,8.75,191,10.2s95.65,15.94,95.65,15.94-29,271-26.09,349.27,27.54,307.25,27.54,307.25-47.83,21.74-92.75,18.84-97.1-17.39-97.1-17.39S122.17,445,122.17,350.78,92.49,29,92.49,29Z"/>
-      <path class="cls-34" :fill="Bracelet"  d="M51.91,155.12S91,82.66,86.69,29c0,0,17.39-27.54,102.9-27.54S299.73,20.34,299.73,20.34s14.8,110.15,35.09,130.44c0,0-96,18.84-148.13,18.84S51.91,155.12,51.91,155.12Z"/>
-      <path class="cls-34" :fill="Bracelet"  d="M337.22,563.46s-41.87,70.92-39.57,124.67c0,0-18.42,26.86-103.87,23.6s-109.35-23-109.35-23S73.85,578.07,54.34,557c0,0,96.61-15.17,148.75-13.19S337.22,563.46,337.22,563.46Z"/>
+      <path class="cls-34" :fill="bracelet"  d="M92.49,29S144.66,8.75,191,10.2s95.65,15.94,95.65,15.94-29,271-26.09,349.27,27.54,307.25,27.54,307.25-47.83,21.74-92.75,18.84-97.1-17.39-97.1-17.39S122.17,445,122.17,350.78,92.49,29,92.49,29Z"/>
+      <path class="cls-34" :fill="bracelet"  d="M51.91,155.12S91,82.66,86.69,29c0,0,17.39-27.54,102.9-27.54S299.73,20.34,299.73,20.34s14.8,110.15,35.09,130.44c0,0-96,18.84-148.13,18.84S51.91,155.12,51.91,155.12Z"/>
+      <path class="cls-34" :fill="bracelet"  d="M337.22,563.46s-41.87,70.92-39.57,124.67c0,0-18.42,26.86-103.87,23.6s-109.35-23-109.35-23S73.85,578.07,54.34,557c0,0,96.61-15.17,148.75-13.19S337.22,563.46,337.22,563.46Z"/>
     </g>
     <g id="boitier">
-      <rect class="cls-34" :fill="Boitier_exterieure"  x="1.5" y="131.88" width="379.91" height="453.62" rx="80.8"/>
-      <rect class="cls-34" :fill="Boitier_intérieur"  x="20.77" y="157.3" width="341.37" height="402.78" rx="72.17"/>
-      <rect class="cls-35" :fill="Écran" x="39.68" y="173.78" width="303.55" height="369.83" rx="65.21"/>
+      <rect class="cls-34" :fill="boitier_exterieure"  x="1.5" y="131.88" width="379.91" height="453.62" rx="80.8"/>
+      <rect class="cls-34" :fill="boitier_intérieur"  x="20.77" y="157.3" width="341.37" height="402.78" rx="72.17"/>
+      <rect class="cls-35" :fill="ecran" x="39.68" y="173.78" width="303.55" height="369.83" rx="65.21"/>
     </g>
     <g id="ecran">
       <text class="cls-36" transform="translate(61.21 331.03)">1O:1O</text>
@@ -274,7 +274,7 @@
 }
 
 .cls-34 {
-  fill: #fff;
+  fill: "bracelter";
 }
 
 .cls-34, .cls-35 {
@@ -284,7 +284,7 @@
 }
 
 .cls-35 {
-  fill: #b3b3b3;
+  fill: "ecran";
 }
 
 .cls-36 {
