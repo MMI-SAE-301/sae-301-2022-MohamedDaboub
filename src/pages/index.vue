@@ -1,4 +1,6 @@
 <script  setup lang="ts">
+import star from "../components/Icons/Star.vue"
+import starvide from "../components/Icons/Starvi.vue"
 import montresans from "../components/montreSvg.vue"
 import type { Montre } from "../types"; 
 import { supabase } from "../supabase";
