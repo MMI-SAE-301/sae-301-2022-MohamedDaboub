@@ -15,3 +15,10 @@ export const colors = {
   "#434750": "Acier",
   "#1DA1F2": "Bleu",
 };
+export const colorsecran = {
+  "#A2A2AD": "gris",
+  "#FFFFFF": "Blanc",
+  "#BBE9E9": "Bleu foncé",
+
+};
+
