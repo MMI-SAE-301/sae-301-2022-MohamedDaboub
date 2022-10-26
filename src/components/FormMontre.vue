@@ -32,20 +32,28 @@ if (props.id) {
 </script>
 <template>
     <div class="p-2 my-10   ">
-        <h2 class="text-2xl font-bold  pb-10">Personnaliser vos chaussures </h2>
+
         <ul class="flex gap-5">
             <li><a href="#MontreSvg">Profil</a></li>
 
         </ul>
         <div class="carousel w-64">
             <MontreSvg class="carousel-item w-64" v-bind="montre" id="Profil"/>   
-        </div>  
-        <FormKit type="form" v-model="montre" >
+        </div> 
+        <h2 class="text-2xl   pb-10">Couleur </h2> 
+        <FormKit type="form" v-model="montre" @submit="upsertMontre" >
             <FormKit name="ecran" label="ecran" value="#FFFFFF" type="radio" :options="colors" :sections-schema="{inner:{$el:null},decorator:{sel:null}}" input-class="peer sr-only" options-class="flex gap-10"><template #label="context"><div class="h-6 w-6 rounded-full border-2 peer-checked:border-red-600" :style="{backgroundColor:context.option.value}"><span class="sr-only">{{context.option.label}}</span></div></template></FormKit>
             <FormKit name="bracelet" label="bracelet" value="#FFFFFF" type="radio" :options="colors" :sections-schema="{inner:{$el:null},decorator:{sel:null}}" input-class="peer sr-only" options-class="flex gap-10"><template #label="context"><div class="h-6 w-6 rounded-full border-2 peer-checked:border-red-600" :style="{backgroundColor:context.option.value}"><span class="sr-only">{{context.option.label}}</span></div></template></FormKit>
             <FormKit name="boitier_exterieure" label="boitier_exterieure" value="#FFFFFF" type="radio" :options="colors" :sections-schema="{inner:{$el:null},decorator:{sel:null}}" input-class="peer sr-only" options-class="flex gap-10"><template #label="context"><div class="h-6 w-6 rounded-full border-2 peer-checked:border-red-600" :style="{backgroundColor:context.option.value}"><span class="sr-only">{{context.option.label}}</span></div></template></FormKit>
             <FormKit name="boitier_intérieur" label="boitier_intérieur" value="#FFFFFF" type="radio" :options="colors" :sections-schema="{inner:{$el:null},decorator:{sel:null}}" input-class="peer sr-only" options-class="flex gap-10"><template #label="context"><div class="h-6 w-6 rounded-full border-2 peer-checked:border-red-600" :style="{backgroundColor:context.option.value}"><span class="sr-only">{{context.option.label}}</span></div></template></FormKit>
         </FormKit>
+        <!-- <h2 class="text-2xl   pb-10">Mat </h2> 
+        <FormKit type="form" v-model="montre" @submit="upsertMontre" >
+            <FormKit name="ecran" label="ecran" value="#FFFFFF" type="radio" :options="colors" :sections-schema="{inner:{$el:null},decorator:{sel:null}}" input-class="peer sr-only" options-class="flex gap-10"><template #label="context"><div class="h-6 w-6 rounded-full border-2 peer-checked:border-red-600" :style="{backgroundColor:context.option.value}"><span class="sr-only">{{context.option.label}}</span></div></template></FormKit>
+            <FormKit name="bracelet" label="bracelet" value="#FFFFFF" type="radio" :options="colors" :sections-schema="{inner:{$el:null},decorator:{sel:null}}" input-class="peer sr-only" options-class="flex gap-10"><template #label="context"><div class="h-6 w-6 rounded-full border-2 peer-checked:border-red-600" :style="{backgroundColor:context.option.value}"><span class="sr-only">{{context.option.label}}</span></div></template></FormKit>
+            <FormKit name="boitier_exterieure" label="boitier_exterieure" value="#FFFFFF" type="radio" :options="colors" :sections-schema="{inner:{$el:null},decorator:{sel:null}}" input-class="peer sr-only" options-class="flex gap-10"><template #label="context"><div class="h-6 w-6 rounded-full border-2 peer-checked:border-red-600" :style="{backgroundColor:context.option.value}"><span class="sr-only">{{context.option.label}}</span></div></template></FormKit>
+            <FormKit name="boitier_intérieur" label="boitier_intérieur" value="#FFFFFF" type="radio" :options="colors" :sections-schema="{inner:{$el:null},decorator:{sel:null}}" input-class="peer sr-only" options-class="flex gap-10"><template #label="context"><div class="h-6 w-6 rounded-full border-2 peer-checked:border-red-600" :style="{backgroundColor:context.option.value}"><span class="sr-only">{{context.option.label}}</span></div></template></FormKit>
+        </FormKit> -->
 
     </div>
 </template>
