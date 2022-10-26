@@ -33,6 +33,16 @@ module.exports = {
         "titillium-web": "Titillium Web",
         "syncopate": "Syncopate"
        },
+      "fontSize": {
+        "sm": "0.8rem",
+        "base": "1rem",
+        "CardText": "1.5rem",
+        "TextMobile": "1.2rem",
+        "textPC": "2.125rem",
+        "textbig": "3.225rem",
+        "TitreMobile": "1.5rem",
+        "TitrePC": "3.125rem",
+       },
     },
   },
   plugins: [
