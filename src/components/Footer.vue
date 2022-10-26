@@ -35,7 +35,12 @@
         <div class="p-5 w-1/2 sm:w-4/12 md:w-3/12">
             <div class="xl:text-2xl text-lg uppercase  font-bold mb-6">
                 SUIVEZ-NOUS
-            </div>  
+            </div>
+            <div class="flex md:gap-4 gap-1 flex-wrap ">
+                <facebook/> 
+                <instagram/> 
+                <twitter/>
+            </div>
         </div>
         <div class="p-5 w-1/2 sm:w-4/12 md:w-3/12">
             <div class="uppercase xl:text-2xl text-lg   font-bold mb-6">
@@ -59,4 +64,7 @@
 </template>
 <script setup lang="ts">
 import { user} from "../supabase";
+import facebook from "./Icons/Facebook.vue";
+import instagram from "./Icons/Instagram.vue";
+import twitter from "./Icons/Twitter.vue";
 </script>
