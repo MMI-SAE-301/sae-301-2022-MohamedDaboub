@@ -18,21 +18,21 @@ const nvlUtilisateur = ref(false);
     <div class="flex flex-wrap gap-y-6 justify-center gap-x-10">
       <div>
         <button class="bg-Color-Bluefoncé px-8 py-4 text-white flex rounded-lg items-center gap-2 mx-2" v-if="user" @pointerdown="supabase.auth.signOut()">
-            <img class=" w-2/12 " src="../assets/Google.png" alt="">
+            <img class=" w-2/12 " src="/img/Google.png" alt="">
           Se déconnecter ({{user.email}})
         </button>
         <button class="bg-Color-Bluefoncé px-8 py-4 text-white flex rounded-lg items-center gap-2 mx-2" v-else @pointerdown="supabase.auth.signIn({provider: 'google'})">
-            <img class="md:w-2/12 w-2/12 " src="../assets/Google.png" alt="">
+            <img class="md:w-2/12 w-2/12 " src="/img/Google.png" alt="">
             Se connecter avec Google
         </button>
       </div>
       <div>
         <button class="bg-Color-Bluefoncé px-8 py-4 text-white flex rounded-lg items-center gap-2 mx-2" v-if="user" @pointerdown="supabase.auth.signOut()">
-            <img class=" w-2/12 " src="../assets/Facebook.png" alt="">
+            <img class=" w-2/12 " src="/img/Facebook.png" alt="">
           Se déconnecter ({{user.email}})
         </button>
         <button class="bg-Color-Bluefoncé px-8 py-4 text-white flex rounded-lg items-center gap-2 mx-2" v-else @pointerdown="supabase.auth.signIn({provider: 'facebook'})">
-            <img class=" w-2/12 " src="../assets/Facebook.png" alt="">
+            <img class=" w-2/12 " src="/img/Facebook.png" alt="">
             Se connecter avec Facebook
         </button>
       </div>

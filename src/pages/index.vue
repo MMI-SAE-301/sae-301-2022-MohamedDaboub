@@ -3,7 +3,7 @@
     <h1 class="text-2xl p-5 ">
       TiK•Tak le site où vous pouvez personnaliser votre <br/> montre comme vous le désirez
     </h1>
-    <img src="../assets/image1Main.png" class="lg:w-[1250px] lg:h-[400px] mt-20" alt=" Montre Intéligente">
+    <img src="/img/image1Main.png" class="lg:w-[1250px] lg:h-[400px] mt-20" alt=" Montre Intéligente">
     <div  class="flex justify-center pb-10" >
     <RouterLink class="bg-Color-Bluefoncé px-8 py-4" to="/Personnalisation">Personnalisation</RouterLink>
     </div>
