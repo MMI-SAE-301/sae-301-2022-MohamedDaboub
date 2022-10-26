@@ -45,11 +45,17 @@ module.exports = {
        },
     },
   },
+  // daisyui: {
+  //   themes: [
+  //     {
+  //     },
+  //   ],
+  // },
   plugins: [
     require("@tailwindcss/typography"),
     require("@tailwindcss/forms"),
     formKitTailwind,
     require("@headlessui/tailwindcss"),
-    require("daisyui"),
+    // require("daisyui"),
   ],
 };
