@@ -60,10 +60,10 @@ if (props.id) {
         <div class="">
             <h2 class="text-2xl   pb-10">Couleur </h2>
             <FormKit type="form" v-model="montre" submit-class="bg-Color-Bluefoncé px-8 rounded-lg py-4 text-white" submit-label="Enregistrer votre Montre"   @submit="openModal"  :submit-attrs="{ classes: { input: 'bg-Color-Bluefoncé px-8 rounded-lg py-4 text-white '} }"  >
-                <FormKit name="ecran" label="ecran" value="#FFFFFF" type="radio" :options="colorsecran" :sections-schema="{inner:{$el:null},decorator:{sel:null}}" input-class="peer sr-only" options-class="flex gap-10"><template #label="context"><div class="h-6 w-6 rounded-full border-2 peer-checked:border-red-600" :style="{backgroundColor:context.option.value}"><span class="sr-only">{{context.option.label}}</span></div></template></FormKit>
-                <formkitlistecolor name="bracelet" label="bracelet"/>
-                <formkitlistecolor name="boitier_exterieure" label="boitier_exterieure"/>
-                <formkitlistecolor name="boitier_intérieur" label="boitier_intérieur"/>
+                <FormKit name="ecran" label="Ecran" value="#FFFFFF" type="radio" :options="colorsecran" :sections-schema="{inner:{$el:null},decorator:{sel:null}}" input-class="peer sr-only" options-class="flex gap-10"><template #label="context"><div class="h-6 w-6 rounded-full border-2 peer-checked:border-red-600" :style="{backgroundColor:context.option.value}"><span class="sr-only">{{context.option.label}}</span></div></template></FormKit>
+                <formkitlistecolor name="bracelet" label="Bracelet"/>
+                <formkitlistecolor name="boitier_exterieure" label="Boitier Exterieure" />
+                <formkitlistecolor name="boitier_intérieur" label="Boitier Intérieur"/>
                 <FormKit name="Commande" label="Commande" type="checkbox" wrapper-class="w-full flex text-xl "></FormKit>
                 <div>
                   <h3 class="md:text-2xl text-xl my-5">Tik • Tak Smart 1</h3>
