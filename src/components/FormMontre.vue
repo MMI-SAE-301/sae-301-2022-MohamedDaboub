@@ -12,9 +12,14 @@ const props = defineProps<{
 }>();
 const montre = ref<Montre>(props.data ?? {});
 
-
-
-
+async function upsertMontre(dataForm, node) {
+  const { data, error } = await supabase.from("Montre").upsert(dataForm);
+  if (error) node.setErrors([error.message]);
+  else {
+    node.setErrors([]);
+    router.push({ name: "Personnalisation-edit-id", params: { id: data[0].id } });
+  }
+}
 
 
 </script>
