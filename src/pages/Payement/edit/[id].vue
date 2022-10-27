@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import Formpaye from "../../components/Formpaye.vue";
+import FormMontre from "../../../components/FormMontre.vue";
 defineProps<{
   id: string;
 }>();
 </script>
 <template>
-  <Formpaye :id="id" />
+  <FormMontre :id="id" />
 </template>
