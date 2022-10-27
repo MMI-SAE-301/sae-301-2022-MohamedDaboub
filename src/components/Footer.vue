@@ -67,5 +67,5 @@
 import { user} from "../supabase";
 import facebook from "./Icons/Facebook.vue";
 import instagram from "./Icons/Instagram.vue";
-import twitter from "./Icons/Twitter.vue";
+// import twitter from "./Icons/Twitter.vue";
 </script>
