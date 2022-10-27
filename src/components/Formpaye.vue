@@ -1,4 +1,4 @@
-<!-- <script setup lang="ts">
+<script setup lang="ts">
 import type { Montre, } from '@/types';
 import { colors,colorsecran } from '@/types';
 import { ref} from 'vue';
@@ -84,7 +84,7 @@ if (props.id) {
                 <h2 class="text-2xl pb-5">Matériaux </h2> 
                 <RadioGroup v-model="Montre2" class="mx-4">
                     <RadioGroupLabel class="sr-only ">Server size</RadioGroupLabel>
-                        <div class="flex gap-10 ">
+                        <div class="flex gap-2 lg:gap-10 flex-wrap">
                             <RadioGroupOption class=""
                                 as="template"
                                 v-for="Matériel in listeMateriaux"
@@ -154,7 +154,6 @@ if (props.id) {
                     </div>
 
                     <div class="mt-4 flex gap-4">
-                      <p class="text-white">Ou</p>
                       <RouterLink to="/"
                         type="button"
                         class="inline-flex justify-center rounded-md border border-transparent bg-Color-vertfoncé px-4 py-2 text-sm font-medium text-white  focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
@@ -171,4 +170,4 @@ if (props.id) {
 
 
     </div>
-</template> -->
+</template>
