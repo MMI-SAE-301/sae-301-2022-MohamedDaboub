@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import FormMontre from "../../../components/FormMontre.vue";
+import FormMontre from "@/components/FormMontre.vue";
 defineProps<{
   data: string;
 }>();
