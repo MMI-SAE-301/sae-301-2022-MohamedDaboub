@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer utilities {
+    .effet-shawdow {
+        text-shadow: #FFF 0px 0px 20px;
+    }
+}
+
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --couleur-text: #000;
+        --couleur-fond: #555e63;
+        --couleur-header: #555e63;
+    }
+}
