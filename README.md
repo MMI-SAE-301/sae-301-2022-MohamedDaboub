@@ -34,8 +34,8 @@ Noté sur 40.
 - [x] usage de Classes utilitaires (1pt)
   - lien vers sa définition[text-shadow](/src/index.css#L8)
   - lien vers son usage [text-shadow](/src/pages/Connexion.vue#L18)
-- [ ] Composants graphiques (0-1-2pts)
-  - liens
+- [x] Composants graphiques (0-1-2pts)
+  - liens[Header](/src/components/header.vue)
 - Technique CSS (0-1-2pts)
   - Quelles techniques (Eg. Styles graphiques (répétés) tous ajoutés par CSS et/ou
     config. Tailwind (eg. before/after avec content, background...))
@@ -45,20 +45,20 @@ Noté sur 40.
   - Quelles techniques (Grilles Flex...)
     - ...
   - liens Flex[flex](/src/pages/index.vue#L53) Grid[Grid](/src/pages/Inspirations.vue#L9)
-  - [ ] Mise en page fluide
-- [ ] Mobile First (0-1-2pts)
-  - [ ] Plusieurs tailles
-    - Lesquelles... [XS](),[md](),[lg]()
-- [ ] Dark Mode (0-1-2pts)
-  - [ ] Simple usage de 'dark:'
-  - [ ] Mise en place avec usage de custom property pour les couleurs. Ou usage de DaisyUI AVEC thèmes perso
-    - liens
+  - [x] Mise en page fluide
+- [x] Mobile First (0-1-2pts)
+  - [x] Plusieurs tailles
+    - Lesquelles... [XS](/src/components/Footer.vue#L21),[md](/src/components/Footer.vue#L21),[lg](/src/components/Footer.vue#L22)
+- [x] Dark Mode (0-1-2pts)
+  - [x] Simple usage de 'dark:'
+  - [x] Mise en place avec usage de custom property pour les couleurs. Ou usage de DaisyUI AVEC thèmes perso
+    - liens [Light Simple](/src/components/Footer.vue#L25) [en Place](/src/index.css#L17)
 - "tailwin.config.js" (0-1-2pts)
-  - [ ] usage basique couleurs/fonts
+  - [x] usage basique couleurs/fonts
   - [x] Comporte des données supplémentaires (utilisées !). Eg: "content-xxx", "bg-xxx", "grid-cols-xxx"...
-    - liens
+    - liens [grid-cols-xxx](/src/pages/Inspirations.vue#L9)
 - Composants "accessibles" (0-1-2pts)
-  - [ ] textes "accessibles" (eg. 'sr-only')
-  - [ ] Contenu accessible ET Usage de composants étudié pour accessibilité (Eg. HeadlessUI)
+  - [x] textes "accessibles" (eg. 'sr-only')[sr-only](/src/components/header.vue#12)
+  - [x] Contenu accessible ET Usage de composants étudié pour accessibilité (Eg. HeadlessUI)[HeadlessUI](/src/components/FormMontre.vue#L126)
 
 [^1]: Supprimez les mentions inutiles.
