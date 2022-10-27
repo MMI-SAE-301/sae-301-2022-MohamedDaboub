@@ -22,7 +22,7 @@
             <div class="xl:text-2xl text-lg uppercase  font-bold mb-6">
                 INFORMATION
             </div>
-                <a href="#" class="my-3 block  hover:text-gray-100 lg:text-xl text-base lg:mx-4 mx-2  font-normal duration-700">
+                <a href="#" class="my-3 block light:text-yellow-100 hover:text-gray-100 lg:text-xl text-base lg:mx-4 mx-2  font-normal duration-700">
                     Mentions légales
                 </a>
                 <a href="#" class="my-3 block  hover:text-gray-100 lg:text-xl text-base lg:mx-4 mx-2  font-normal duration-700">
