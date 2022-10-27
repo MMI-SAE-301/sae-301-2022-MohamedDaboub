@@ -1,4 +1,5 @@
 <script setup lang="ts">
+// @ts-nocheck
 import type { Montre, } from '@/types';
 import { colors,colorsecran } from '@/types';
 import { ref} from 'vue';
@@ -45,7 +46,7 @@ const props = defineProps<{
 }>();
 const montre = ref<Montre>(props.data ?? {});
 
-//
+// @ts-ignore
 async function upsertMontre(dataForm, node) {
   console.log("dataForm", dataForm);
   const { data, error } = await supabase.from("Montre").upsert(dataForm);
