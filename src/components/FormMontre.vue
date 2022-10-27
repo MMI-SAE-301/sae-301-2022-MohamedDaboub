@@ -65,6 +65,15 @@ if (props.id) {
     console.log("n'a pas pu charger le table Montre :", error);
   else montre.value = (data as any[])[0];
 }
+// if (props.id) {
+//         // On charge les données de la maison
+//         let { data, error } = await supabase
+//         .from("Montre")
+//         .select("*")
+//         .eq("id", props.id);
+//         if (error) console.log("n'a pas pu charger le table montre :", error);
+//         else montre.value = (data as any[])[0];
+//     }     
 console.log(montre.value);
 
 </script>
@@ -114,7 +123,7 @@ console.log(montre.value);
                         </RadioGroupOption>
                     </div>
                 </RadioGroup>
-                <!-- <FormKit name="Commande" label="Commande" type="checkbox" wrapper-class="w-full flex text-xl "></FormKit> -->
+                <FormKit name="Commande" label="Commande" type="checkbox" wrapper-class="w-full flex text-xl "></FormKit>
                 <div>
                   <h3 class="md:text-2xl text-xl my-5">Tik • Tak Smart 1</h3>
                   <h2 class="md:text-2xl text-xl my-5">Prix : 300€</h2>
