@@ -44,11 +44,11 @@ Noté sur 40.
 - Mise en page CSS (0-1-2pts)
   - Quelles techniques (Grilles Flex...)
     - ...
-  - liens
+  - liens Flex[flex](/src/pages/index.vue#L53) Grid[Grid](/src/pages/Inspirations.vue#L9)
   - [ ] Mise en page fluide
 - [ ] Mobile First (0-1-2pts)
   - [ ] Plusieurs tailles
-    - Lesquelles...
+    - Lesquelles... [XS](),[md](),[lg]()
 - [ ] Dark Mode (0-1-2pts)
   - [ ] Simple usage de 'dark:'
   - [ ] Mise en place avec usage de custom property pour les couleurs. Ou usage de DaisyUI AVEC thèmes perso
