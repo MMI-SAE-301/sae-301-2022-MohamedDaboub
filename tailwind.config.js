@@ -11,7 +11,9 @@ module.exports = {
          "Bluefoncé": "#363553",
          "white": "#ffffff",
          "vertfoncé": "#609677",
-         "Marronfoncé": "#2F2828"
+         "Marronfoncé": "#2F2828",
+         "header": "var(--couleur-header)",
+         "footer": "var(-couleur-footer)",
         },
        },
       borderRadius: {
