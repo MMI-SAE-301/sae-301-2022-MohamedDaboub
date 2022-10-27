@@ -14,7 +14,22 @@ import {
   DialogPanel,
   DialogTitle,
 } from '@headlessui/vue'
-
+import {
+      RadioGroup,
+      RadioGroupLabel,
+      RadioGroupDescription,
+      RadioGroupOption,
+    } from '@headlessui/vue'
+const { data: listeMateriaux, error } = await supabase
+          .from("Matériel")
+          .select("*");
+        if (error) console.log("n'a pas pu charger la table Matériaux :", error);
+        // Les convertir par map en un tableau d'objets {value, label} pour FormKit
+        const optionsMateriaux = listeMateriaux?.map((Matériel) => ({
+          value: Matériel.code,
+          label: Matériel.Libelle,
+    }))
+const Montre2 = ref({});
 const isOpen = ref(false)
 
 function closeModal() {
@@ -30,12 +45,14 @@ const props = defineProps<{
 }>();
 const montre = ref<Montre>(props.data ?? {});
 
+//
 async function upsertMontre(dataForm, node) {
+  console.log("dataForm", dataForm);
   const { data, error } = await supabase.from("Montre").upsert(dataForm);
   if (error) node.setErrors([error.message]);
   else {
     node.setErrors([]);
-    router.push({ name: "", params: { id: data[0].id } });
+    openModal();
   }
 }
 if (props.id) {
@@ -45,38 +62,63 @@ if (props.id) {
     .eq("id", props.id);
   if (error || !data)
     console.log("n'a pas pu charger le table Montre :", error);
-  else montre.value = data[0];
+  else montre.value = (data as any[])[0];
 }
+console.log(montre.value);
 
 </script>
 <template>
     <div class="flex flex-wrap justify-between md:justify-center  md:gap-20 ">
         <div>
-            <div class="carousel w-64">
-                <MontreSvg class="carousel-item w-64" v-bind="montre" id="Profil"/>   
+            <div class=" w-64">
+                <MontreSvg class="w-64" v-bind="montre"/>   
             </div> 
             
         </div>
         <div class="">
-            <h2 class="text-2xl   pb-10">Couleur </h2>
-            <FormKit type="form" v-model="montre" submit-class="bg-Color-Bluefoncé px-8 rounded-lg py-4 text-white" submit-label="Enregistrer votre Montre"   @submit="openModal"  :submit-attrs="{ classes: { input: 'bg-Color-Bluefoncé px-8 rounded-lg py-4 text-white '} }"  >
+            <h2 class="text-2xl   pb-5">Couleur </h2>
+            <FormKit type="form" v-model="montre" submit-class="bg-Color-Bluefoncé px-8 rounded-lg py-4 text-white" submit-label="Enregistrer votre Montre"   @submit="upsertMontre"  :submit-attrs="{ classes: { input: 'bg-Color-Bluefoncé px-8 rounded-lg py-4 text-white '} }"  >
                 <FormKit name="ecran" label="Ecran" value="#FFFFFF" type="radio" :options="colorsecran" :sections-schema="{inner:{$el:null},decorator:{sel:null}}" input-class="peer sr-only" options-class="flex gap-10"><template #label="context"><div class="h-6 w-6 rounded-full border-2 peer-checked:border-red-600" :style="{backgroundColor:context.option.value}"><span class="sr-only">{{context.option.label}}</span></div></template></FormKit>
                 <formkitlistecolor name="bracelet" label="Bracelet"/>
                 <formkitlistecolor name="boitier_exterieure" label="Boitier Exterieure" />
                 <formkitlistecolor name="boitier_intérieur" label="Boitier Intérieur"/>
-                <FormKit name="Commande" label="Commande" type="checkbox" wrapper-class="w-full flex text-xl "></FormKit>
+                <h2 class="text-2xl pb-5">Matériaux </h2> 
+                <RadioGroup v-model="Montre2" class="mx-4">
+                    <RadioGroupLabel class="sr-only ">Server size</RadioGroupLabel>
+                        <div class="flex gap-10 ">
+                            <RadioGroupOption class=""
+                                as="template"
+                                v-for="Matériel in listeMateriaux"
+                                :key="Matériel.code"
+                                :value="Matériel.code"
+                                v-slot="{ active, checked }">
+                                <div :class="[
+                                  active
+                                    ? 'ring-2 ring-noir'
+                                    : '',
+                                  checked ? 'bg-Color-Bluefoncé  text-white  ' : ' ',
+                                    ]"
+                                    class="cursor-pointer rounded-lg px-10 py-4 border-2 border-noir ">
+                                    <div class="text-sm">
+                                        <RadioGroupLabel
+                                            as="p"
+                                            :class="checked ? 'text-blanc' : 'text-noir '"
+                                            class="font-medium ">
+                                            {{ Matériel.Libelle }}
+                                        </RadioGroupLabel>
+                                    </div>
+                                </div>
+                        </RadioGroupOption>
+                    </div>
+                </RadioGroup>
+                <!-- <FormKit name="Commande" label="Commande" type="checkbox" wrapper-class="w-full flex text-xl "></FormKit> -->
                 <div>
                   <h3 class="md:text-2xl text-xl my-5">Tik • Tak Smart 1</h3>
                   <h2 class="md:text-2xl text-xl my-5">Prix : 300€</h2>
                 </div>
             </FormKit>
-            <!-- <h2 class="text-2xl   pb-10">Mat </h2> 
-            <FormKit type="form" v-model="montre" @submit="upsertMontre" >
-                <FormKit name="ecran" label="ecran" value="#FFFFFF" type="radio" :options="colors" :sections-schema="{inner:{$el:null},decorator:{sel:null}}" input-class="peer sr-only" options-class="flex gap-10"><template #label="context"><div class="h-6 w-6 rounded-full border-2 peer-checked:border-red-600" :style="{backgroundColor:context.option.value}"><span class="sr-only">{{context.option.label}}</span></div></template></FormKit>
-                <FormKit name="bracelet" label="bracelet" value="#FFFFFF" type="radio" :options="colors" :sections-schema="{inner:{$el:null},decorator:{sel:null}}" input-class="peer sr-only" options-class="flex gap-10"><template #label="context"><div class="h-6 w-6 rounded-full border-2 peer-checked:border-red-600" :style="{backgroundColor:context.option.value}"><span class="sr-only">{{context.option.label}}</span></div></template></FormKit>
-                <FormKit name="boitier_exterieure" label="boitier_exterieure" value="#FFFFFF" type="radio" :options="colors" :sections-schema="{inner:{$el:null},decorator:{sel:null}}" input-class="peer sr-only" options-class="flex gap-10"><template #label="context"><div class="h-6 w-6 rounded-full border-2 peer-checked:border-red-600" :style="{backgroundColor:context.option.value}"><span class="sr-only">{{context.option.label}}</span></div></template></FormKit>
-                <FormKit name="boitier_intérieur" label="boitier_intérieur" value="#FFFFFF" type="radio" :options="colors" :sections-schema="{inner:{$el:null},decorator:{sel:null}}" input-class="peer sr-only" options-class="flex gap-10"><template #label="context"><div class="h-6 w-6 rounded-full border-2 peer-checked:border-red-600" :style="{backgroundColor:context.option.value}"><span class="sr-only">{{context.option.label}}</span></div></template></FormKit>
-            </FormKit> -->
+            
+
 
         </div>
         <TransitionRoot appear :show="isOpen" as="template">
