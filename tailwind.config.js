@@ -13,7 +13,7 @@ module.exports = {
          "vertfoncé": "#609677",
          "Marronfoncé": "#2F2828",
          "header": "var(--couleur-header)",
-         "footer": "var(-couleur-footer)",
+         "footer": "var(--couleur-footer)",
         },
        },
       borderRadius: {

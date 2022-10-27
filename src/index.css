@@ -9,6 +9,10 @@
     }
 }
 
+:root{
+    --couleur-footer: #262222;
+    --couleur-header: #262222; 
+}
 
 @media (prefers-color-scheme: light) {
     :root {
