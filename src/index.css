@@ -13,7 +13,7 @@
 @media (prefers-color-scheme: light) {
     :root {
         --couleur-text: #000;
-        --couleur-fond: #555e63;
+        --couleur-footer: #555e63;
         --couleur-header: #555e63;
     }
 }
