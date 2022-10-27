@@ -5,7 +5,7 @@
 
 @layer utilities {
     .effet-shawdow {
-        text-shadow: #FFF 0px 0px 20px;
+        text-shadow: #000 0px 0px 20px;
     }
 }
 
