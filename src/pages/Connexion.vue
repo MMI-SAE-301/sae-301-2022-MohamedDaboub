@@ -15,7 +15,7 @@ async function signIn(data, node) {
 const nvlUtilisateur = ref(false);
 </script>
 <template>
-    <h1 class=" text-3xl md:text-4xl lg:text-5xl py-10 px-5 text-center">Se connecter</h1>
+    <h1 class=" text-3xl md:text-4xl lg:text-5xl py-10 px-5 text-center text-shadow">Se connecter</h1>
     <div class="flex flex-wrap gap-y-6 justify-center gap-x-10">
       <div>
         <button class="bg-Color-Bluefoncé px-8 py-4 text-white flex rounded-lg items-center gap-2 mx-2" v-if="user" @pointerdown="supabase.auth.signOut()">
