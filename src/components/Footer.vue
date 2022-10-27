@@ -1,5 +1,5 @@
 <template>
-    <footer class="bg-Color-grisfoncé bg-footer pt-10 sm:mt-10">
+    <footer class="bg-Color-grisfoncé bg-Color-footer pt-10 sm:mt-10">
     <div class="max-w-7xl m-auto  flex flex-wrap justify-left text-white">
         <div class="p-5 w-1/2 sm:w-4/12 md:w-3/12">
             <div class="xl:text-2xl text-lg uppercase  font-bold mb-6">
