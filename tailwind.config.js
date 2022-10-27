@@ -43,8 +43,12 @@ module.exports = {
         "TitreMobile": "1.5rem",
         "TitrePC": "3.125rem",
        },
+       screens: {
+        light: { raw: '(prefers-color-scheme: light)' },
+      },
     },
   },
+
   // daisyui: {
   //   themes: [
   //     {
