@@ -1,4 +1,5 @@
 <script setup lang="ts">
+// @ts-nocheck
 import star from "../../components/Icons/Star.vue"
 import starvide from "../../components/Icons/Starvi.vue"
 import montreavec from "../../components/FormMontre.vue"

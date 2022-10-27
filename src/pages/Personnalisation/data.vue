@@ -1,4 +1,5 @@
 <script setup lang="ts">
+// @ts-nocheck
 import FormMontre from "@/components/FormMontre.vue";
 defineProps<{
   data: string;
