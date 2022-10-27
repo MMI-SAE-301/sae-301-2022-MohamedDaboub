@@ -3,7 +3,7 @@
 - **Nom :** Daboub
 - **Prénom :** Mohamed
 - **URL maquette Figma:** https://www.figma.com/file/4KbBO8sJvEL0eje3Y9FdkM/SAE301?node-id=1%3A45
-- **URL publique du site :**
+- **URL publique du site :** tik-tak.daboub.fr
 - **URL projet Supabase :** db.azbrdgwwpwkbiymlogmh.supabase.co
   - [x] Avez-vous invité abdallah.makhoul@univ-fcomte.fr dans votre 'Organisation' Supabase ?
 
