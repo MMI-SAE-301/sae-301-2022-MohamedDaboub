@@ -1,4 +1,5 @@
 <script setup lang="ts">
+// @ts-nocheck
 import type { Montre, } from '@/types';
 import { colors,colorsecran } from '@/types';
 import { ref} from 'vue';
@@ -24,7 +25,6 @@ const { data: listeMateriaux, error } = await supabase
           .from("Matériel")
           .select("*");
         if (error) console.log("n'a pas pu charger la table Matériaux :", error);
-        // Les convertir par map en un tableau d'objets {value, label} pour FormKit
         const optionsMateriaux = listeMateriaux?.map((Matériel) => ({
           value: Matériel.code,
           label: Matériel.Libelle,

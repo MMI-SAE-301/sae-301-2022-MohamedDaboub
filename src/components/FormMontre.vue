@@ -64,16 +64,7 @@ if (props.id) {
   if (error || !data)
     console.log("n'a pas pu charger le table Montre :", error);
   else montre.value = (data as any[])[0];
-}
-// if (props.id) {
-//         // On charge les données de la maison
-//         let { data, error } = await supabase
-//         .from("Montre")
-//         .select("*")
-//         .eq("id", props.id);
-//         if (error) console.log("n'a pas pu charger le table montre :", error);
-//         else montre.value = (data as any[])[0];
-//     }     
+}  
 console.log(montre.value);
 
 </script>
