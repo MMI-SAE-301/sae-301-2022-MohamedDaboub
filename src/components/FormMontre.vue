@@ -78,14 +78,16 @@ console.log(montre.value);
         <div class="">
             <h2 class="text-2xl   pb-5">Couleur </h2>
             <FormKit type="form" v-model="montre" submit-class="bg-Color-Bluefoncé px-8 rounded-lg py-4 text-white" submit-label="Enregistrer votre Montre"   @submit="upsertMontre"  :submit-attrs="{ classes: { input: 'bg-Color-Bluefoncé px-8 rounded-lg py-4 text-white '} }"  >
+              <div class="gap-1">
                 <FormKit name="ecran" label="Ecran" value="#FFFFFF" type="radio" :options="colorsecran" :sections-schema="{inner:{$el:null},decorator:{sel:null}}" input-class="peer sr-only" options-class="flex gap-10"><template #label="context"><div class="h-6 w-6 rounded-full border-2 peer-checked:border-red-600" :style="{backgroundColor:context.option.value}"><span class="sr-only">{{context.option.label}}</span></div></template></FormKit>
                 <formkitlistecolor name="bracelet" label="Bracelet"/>
                 <formkitlistecolor name="boitier_exterieure" label="Boitier Exterieure" />
                 <formkitlistecolor name="boitier_intérieur" label="Boitier Intérieur"/>
+              </div>
                 <h2 class="text-2xl pb-5">Matériaux </h2> 
-                <RadioGroup v-model="Montre2" class="mx-4">
+                <RadioGroup v-model="Montre2" class="mx-4 flex flex-wrap">
                     <RadioGroupLabel class="sr-only ">Server size</RadioGroupLabel>
-                        <div class="flex gap-10 ">
+                        <div class="flex  flex-wrap gap-2 lg:gap-10 ">
                             <RadioGroupOption class=""
                                 as="template"
                                 v-for="Matériel in listeMateriaux"
