@@ -56,14 +56,20 @@ async function upsertMontre(dataForm, node) {
   }
 }
 if (props.id) {
+  console.log("props.id", props.id);
   let { data, error } = await supabase
     .from("Montre")
     .select("*")
-    .eq("id", props.id);
-  if (error || !data)
+    .eq("id", "9c1e422b-9680-497e-a402-33f6f90f56ed");
+    // TODO Pierre Pracht code non resolut
+   // .eq("id", props.id);
+    if (error || !data)
     console.log("n'a pas pu charger le table Montre :", error);
-  else montre.value = data[0];
-}
+  else {
+     montre.value = (data as any[])[0];
+     Montre2.value = montre.value.Matériel_bracelet;
+  }
+}  
 
 </script>
 <template>

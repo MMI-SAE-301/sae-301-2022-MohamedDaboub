@@ -60,5 +60,7 @@ Noté sur 40.
 - Composants "accessibles" (0-1-2pts)
   - [x] textes "accessibles" (eg. 'sr-only')[sr-only](/src/components/header.vue#12)
   - [x] Contenu accessible ET Usage de composants étudié pour accessibilité (Eg. HeadlessUI)[HeadlessUI](/src/components/FormMontre.vue#L126)
+- lien de problem id [id-Problem](/src/components/FormMontre.vue#L66)1er
+  - 2er[id-Problem](/src/components/Formpaye.vue#L64)
 
 [^1]: Supprimez les mentions inutiles.
