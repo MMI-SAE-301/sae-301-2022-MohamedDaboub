@@ -5,7 +5,8 @@ CREATE TABLE Montre(
     id uuid  NOT NULL,
     ecran text,
     bracelet text,
-    boitier text,
+    boitier_exterieure text,
+    boitier_intérieur text,
     Commande text,
     id_user uuid,
     Matériel_bracelet uuid,
@@ -13,6 +14,7 @@ CREATE TABLE Montre(
     primary key (id),
     foreign key (id_user) references auth.users(id),
     foreign key (Matériel_boitier,Matériel_bracelet) references Matériel (code)
+    foreign key (Matériel_bracelet) references Matériel (code)
 );
 CREATE TABLE Matériel
 (
