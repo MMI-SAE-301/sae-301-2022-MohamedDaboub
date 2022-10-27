@@ -63,6 +63,7 @@
 </footer>
 </template>
 <script setup lang="ts">
+// @ts-ignore
 import { user} from "../supabase";
 import facebook from "./Icons/Facebook.vue";
 import instagram from "./Icons/Instagram.vue";
