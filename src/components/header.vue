@@ -25,6 +25,7 @@
                 <li class="my-5"><RouterLink to="/">Accueil</RouterLink></li>
                 <li class="my-5"><RouterLink to="/Personnalisation">Personnalisation</RouterLink></li>
                 <li class="my-5"><RouterLink to="/Inspirations">Inspirations</RouterLink></li>
+                <li class="my-5"><RouterLink v-if="user" to="/vosModèles" class="">Votre sélection</RouterLink></li>
                 <li class=" bg-Color-Bluefoncé  py-6 px-6 "><RouterLink to="/Connexion">Connexion</RouterLink></li>
             </ul>
             </transition>
@@ -33,12 +34,15 @@
                 <li ><RouterLink to="/">Accueil</RouterLink></li>
                 <li ><RouterLink to="/Personnalisation">Personnalisation</RouterLink></li>
                 <li ><RouterLink to="/Inspirations">Inspirations</RouterLink></li>
+                <li><RouterLink v-if="user" to="/vosModèles" class="">Votre sélection</RouterLink></li>
                 <li class="bg-Color-Bluefoncé  py-10 px-5 "><RouterLink to="/Connexion">Connexion</RouterLink></li>
             </ul>
         </nav>
     </header>
 </template>
 <script setup lang="ts">
+// @ts-ignore
+import { user} from "../supabase";
 import { Bars3Icon } from '@heroicons/vue/20/solid'
 import {ref} from 'vue'
 const menuOuvert = ref(false)
