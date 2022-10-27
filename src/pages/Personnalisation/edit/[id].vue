@@ -7,5 +7,5 @@ console.log("props.id", props.id);
 
 </script>
 <template>
-  <FormMontre id="abcd" />
+  <FormMontre :id="id" />
 </template>
